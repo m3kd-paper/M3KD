@@ -1,0 +1,27 @@
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{microtype}
+
+\title{DriveBench Corruption Robustness Analysis}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Aggregate Performance Across Corruptions}
+
+Table~\ref{tab:drivebench-corruption-aggregate}
+reports the mean performance and standard deviation across the
+15 corruption types for each evaluated model. Results are
+organized by perception, prediction, planning, and behavior.
+
+\input{model_aggregate_table.tex}
+
+\end{document}

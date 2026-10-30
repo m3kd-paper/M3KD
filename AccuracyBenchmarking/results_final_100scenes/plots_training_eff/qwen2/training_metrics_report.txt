@@ -1,0 +1,49 @@
+Qwen2-VL Training Systems Measurements
+============================================
+Generated: 2026-10-30T15:02:02-04:00
+
+Training metrics
+----------------
++KD (qwen2-vl-2b-kd-8000)
+  Source: /root/username/distillm-2/outputs/qwen2-vl-2b-kd-8000/train_results.json
+  Training samples: 7500.0
+  Runtime: 8889.322 s (2.4693 h)
+  Throughput: 0.844000 samples/s
+  Steps/s: 0.105000
+  Training loss: 0.162383
+  Peak GPU memory: N/A
+
++SpeculativeKD (qwen2-vl-2b-speculative_kd-8000)
+  Source: /root/username/distillm-2/outputs/qwen2-vl-2b-speculative_kd-8000/train_results.json
+  Training samples: 7500.0
+  Runtime: 8897.262 s (2.4715 h)
+  Throughput: 0.843000 samples/s
+  Steps/s: 0.105000
+  Training loss: 0.162376
+  Peak GPU memory: N/A
+
++DistillM_v2 (qwen2-vl-2b-distillm_v2-8000)
+  Source: /root/username/distillm-2/outputs/qwen2-vl-2b-distillm_v2-8000/train_results.json
+  Training samples: 7500.0
+  Runtime: 9453.953 s (2.6261 h)
+  Throughput: 0.793000 samples/s
+  Steps/s: 0.099000
+  Training loss: 0.234182
+  Peak GPU memory: N/A
+
++M3KD (qwen2-vl-2b-m3kd-micro4-8000-REJECTEDCURRICULUM-true)
+  Source: /root/username/distillm-2/outputs/qwen2-vl-2b-m3kd-micro4-8000-REJECTEDCURRICULUM-true/train_results.json
+  Training samples: 7500.0
+  Runtime: 9320.123 s (2.5889 h)
+  Throughput: 0.805000 samples/s
+  Steps/s: 0.101000
+  Training loss: 0.289697
+  Peak GPU memory: N/A
+
+Interpretation notes
+--------------------
+Runtime is train_runtime converted from seconds to hours.
+Throughput is train_samples_per_second as reported by Trainer.
+Peak GPU memory is shown only when a recognized memory field is present.
+Memory values with *_gib are treated as GiB; *_mib and generic memory fields are treated as MiB.
+Do not compare runtime across runs with different sample counts, epochs, hardware, or optimization settings without qualification.

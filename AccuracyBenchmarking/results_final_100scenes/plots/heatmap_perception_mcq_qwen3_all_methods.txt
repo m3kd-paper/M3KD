@@ -1,0 +1,9 @@
+=== DriveBench Perception MCQ Robustness: Qwen3 Family ===
+
+model    Qwen3-VL-2B-Instruct Qwen3-VL-8B-Instruct   +SFT    +KD +SpeculativeKD +DistillM_v2  +M3KD
+h256                    0.405                0.690  0.619  0.690          0.690        0.690  0.698
+motion                  0.429                0.714  0.667  0.690          0.690        0.690  0.690
+rain                    0.452                0.690  0.476  0.690          0.667        0.667  0.690
+saturate                0.357                0.667  0.595  0.690          0.690        0.690  0.690
+water                   0.429                0.619  0.571  0.667          0.690        0.667  0.690
+Average                 0.414                0.676  0.586  0.686          0.686        0.681  0.692

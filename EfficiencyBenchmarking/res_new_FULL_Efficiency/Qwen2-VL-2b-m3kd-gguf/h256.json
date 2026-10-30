@@ -1,0 +1,674 @@
+[
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "818a1bd7b7394194a85163c8d95958a9",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black small sedan to the back of the ego vehicle, a black SUV to the back left of the ego vehicle, and a black small car to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.7380,0.5926>, <c2,CAM_BACK_LEFT,0.1906,0.6426>, and <c3,CAM_FRONT_LEFT,0.7547,0.5703>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290858162404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290858154799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290858170482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290858187559.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290858197405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290858178113.jpg"
+        },
+        "pred": "The important objects in the current scene include the cars on the road, the buildings, and the rain. The cars are moving along the road, and the buildings are visible in the background. The rain is also present, indicating that it is raining. These objects will be considered for the future reasoning and driving decision as they are relevant to the driving context and safety.",
+        "eff_preprocess_sec": 0.12731353199342266,
+        "eff_generate_sec": 2.4374953509832267,
+        "eff_end_to_end_sec": 2.5648088829766493,
+        "eff_generated_tokens": 74,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "818a1bd7b7394194a85163c8d95958a9",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.7380,0.5926>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "C",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290858162404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290858154799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290858170482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290858187559.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290858197405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290858178113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.7380,0.5926> is not clear from the given information. The image shows a car driving on a road, but there is no information about the direction or speed of the car. Therefore, it is not possible to determine the correct answer from the given options.",
+        "eff_preprocess_sec": 0.13838881900301203,
+        "eff_generate_sec": 1.8157939550001174,
+        "eff_end_to_end_sec": 1.9541827740031295,
+        "eff_generated_tokens": 75,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "cc0114d0a58a49548f5bac6786851a08",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black car to the back of the ego vehicle, a black sedan to the front of the ego vehicle, a silver white pickup truck to the front left of the ego vehicle, a black sedan car to the front left of the ego vehicle, a black SUV to the front right of the ego vehicle, and a black sedan to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.8026,0.6222>, <c2,CAM_FRONT,0.8359,0.6167>, <c3,CAM_FRONT_LEFT,0.6120,0.6083>, <c4,CAM_FRONT_LEFT,0.8489,0.5852>, <c5,CAM_FRONT_RIGHT,0.2016,0.7249>, and <c6,CAM_FRONT_LEFT,0.2318,0.7176>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290861262404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290861254799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290861270482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290861287773.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290861297405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290861278113.jpg"
+        },
+        "pred": "The important objects in the current scene include the cars on the road, the buildings, and the rain. The cars are moving along the road, and the buildings are visible in the background. The rain is also present, indicating that it is raining. These objects will be considered for the future reasoning and driving decision as they are relevant to the driving context and the weather conditions.",
+        "eff_preprocess_sec": 0.2043558960140217,
+        "eff_generate_sec": 2.725413155014394,
+        "eff_end_to_end_sec": 2.9297690510284156,
+        "eff_generated_tokens": 76,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "cc0114d0a58a49548f5bac6786851a08",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.8026,0.6222>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290861262404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290861254799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290861270482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290861287773.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290861297405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290861278113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.8026,0.6222> is not clear from the given information. The image shows a car driving on a road, but there is no information about the direction or speed of the car. Therefore, it is not possible to determine the correct answer from the given options.",
+        "eff_preprocess_sec": 0.21694422300788574,
+        "eff_generate_sec": 2.042494491004618,
+        "eff_end_to_end_sec": 2.2594387140125036,
+        "eff_generated_tokens": 75,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "64ca274b5f69458bb5d21e0e2e071902",
+        "frame_token": "e56e169f25274dc1bf12c25363ef6ddc",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the front left of the ego vehicle, a black sedan to the back of the ego vehicle, a black sedan to the front right of the ego vehicle, and a black SUV to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_LEFT,0.2292,0.3686>, <c2,CAM_BACK,0.6146,0.6417>, <c3,CAM_FRONT_RIGHT,0.5604,0.5324>, and <c4,CAM_FRONT,0.5646,0.5528>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-15-26-58-0400__CAM_FRONT__1537299514862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_LEFT__1537299514854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_RIGHT__1537299514870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-15-26-58-0400__CAM_BACK__1537299514887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-15-26-58-0400__CAM_BACK_LEFT__1537299514897414.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299514878113.jpg"
+        },
+        "pred": "The important objects in the current scene include the truck, the car, the buildings, and the rain. The truck is driving on the road, the car is parked on the side of the road, and the buildings are visible in the background. The rain is also present, indicating that it is raining. These objects will be considered for the future reasoning and driving decision as they are relevant to the driving context and the weather conditions.",
+        "eff_preprocess_sec": 0.13519850402371958,
+        "eff_generate_sec": 6.407172560982872,
+        "eff_end_to_end_sec": 6.542371065006591,
+        "eff_generated_tokens": 87,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "64ca274b5f69458bb5d21e0e2e071902",
+        "frame_token": "e56e169f25274dc1bf12c25363ef6ddc",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT_LEFT,0.2292,0.3686>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Turn right.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-15-26-58-0400__CAM_FRONT__1537299514862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_LEFT__1537299514854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_RIGHT__1537299514870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-15-26-58-0400__CAM_BACK__1537299514887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-15-26-58-0400__CAM_BACK_LEFT__1537299514897414.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299514878113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_FRONT_LEFT,0.2292,0.3686> is not clear from the given information. It could be either going ahead or turning left.",
+        "eff_preprocess_sec": 0.10499474199605174,
+        "eff_generate_sec": 0.932025933987461,
+        "eff_end_to_end_sec": 1.0370206759835128,
+        "eff_generated_tokens": 46,
+        "eff_input_tokens": 547
+    },
+    {
+        "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+        "frame_token": "f589ce80644d46c0ab3c6e764321d5ef",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a blue and white car to the front of the ego vehicle, a blue truck to the back of the ego vehicle, a white commercial vehicle to the front right of the ego vehicle, a pedestrian holding a black umbrella to the front left of the ego vehicle, a traffic light with green light on to the front of the ego vehicle, and a traffic light with green light on to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.5792,0.6213>, <c2,CAM_BACK,0.4125,0.5231>, <c3,CAM_FRONT_RIGHT,0.4349,0.7661>, <c4,CAM_FRONT_LEFT,0.6239,0.5991>, <c5,CAM_FRONT,0.6933,0.4310>, and <c6,CAM_FRONT,0.4500,0.4412>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402419012460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402419004844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_RIGHT__1532402419020339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-13-19+0800__CAM_BACK__1532402419037525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-13-19+0800__CAM_BACK_LEFT__1532402419047423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_BACK_RIGHT__1532402419027893.jpg"
+        },
+        "pred": "The important objects in the current scene include the white car, the green car, the white building, and the tall building. These objects are crucial for understanding the current driving environment and making informed decisions about the next steps.",
+        "eff_preprocess_sec": 0.09596103298827074,
+        "eff_generate_sec": 1.250012564996723,
+        "eff_end_to_end_sec": 1.3459735979849938,
+        "eff_generated_tokens": 45,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+        "frame_token": "f589ce80644d46c0ab3c6e764321d5ef",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.5792,0.6213>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402419012460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402419004844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_RIGHT__1532402419020339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-13-19+0800__CAM_BACK__1532402419037525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-13-19+0800__CAM_BACK_LEFT__1532402419047423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_BACK_RIGHT__1532402419027893.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_FRONT,0.5792,0.6213> is B. Going ahead.",
+        "eff_preprocess_sec": 0.1102605160267558,
+        "eff_generate_sec": 0.6061277160188183,
+        "eff_end_to_end_sec": 0.7163882320455741,
+        "eff_generated_tokens": 33,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "df8dfada99a04a81bd1b102eeb84e9bc",
+        "frame_token": "e3f986e5d53f416492bdf255e82bff52",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black car to the front of the ego vehicle, a person riding a bicycle to the front of the ego vehicle, a person wearing a pink shirt and black pants to the front of the ego vehicle, a white SUV to the front right of the ego vehicle, a black sedan to the back right of the ego vehicle, and a black sedan to the back of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.6604,0.6314>, <c2,CAM_FRONT,0.2052,0.6092>, <c3,CAM_FRONT,0.0203,0.5991>, <c4,CAM_FRONT_RIGHT,0.4313,0.6758>, <c5,CAM_BACK_RIGHT,0.2409,0.7426>, and <c6,CAM_BACK,0.1351,0.6314>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535574095912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535574095904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535574095920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535574095937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535574095947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535574095928113.jpg"
+        },
+        "pred": "The important objects in the current scene include the white car, the blue car, the white truck, the white SUV, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car, the white car,",
+        "eff_preprocess_sec": 0.1129148100153543,
+        "eff_generate_sec": 11.491021258989349,
+        "eff_end_to_end_sec": 11.603936069004703,
+        "eff_generated_tokens": 512,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "df8dfada99a04a81bd1b102eeb84e9bc",
+        "frame_token": "e3f986e5d53f416492bdf255e82bff52",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.6604,0.6314>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535574095912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535574095904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535574095920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535574095937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535574095947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535574095928113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_FRONT,0.6604,0.6314> is not clear from the given information. The image shows a car driving on a road, but there is no information about the car's direction or movement. Therefore, it is not possible to determine the correct answer from the given options.",
+        "eff_preprocess_sec": 0.12770056200679392,
+        "eff_generate_sec": 1.945218192995526,
+        "eff_end_to_end_sec": 2.07291875500232,
+        "eff_generated_tokens": 74,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "dcdea563c77544bb887de11d87619d3c",
+        "frame_token": "0f6432a5c6824bed9cd2603e00e5f61e",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a gray car to the front right of the ego vehicle, a white truck to the front of the ego vehicle, a red car to the front of the ego vehicle, a white truck to the back of the ego vehicle, and a white truck to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_RIGHT,0.4151,0.5703>, <c2,CAM_FRONT,0.7714,0.4908>, <c3,CAM_FRONT,0.8896,0.5870>, <c4,CAM_BACK,0.2874,0.5519>, and <c5,CAM_FRONT_LEFT,0.4239,0.4528>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297503412404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297503404799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297503420482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297503437558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297503447405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297503428113.jpg"
+        },
+        "pred": "The important objects in the current scene include the truck, the car, the traffic light, and the buildings. The truck is driving on the road, the car is stopped at the traffic light, and the buildings are visible in the background. The rain and the presence of the truck and car suggest that the scene is taking place during a rainy day.",
+        "eff_preprocess_sec": 0.14791511499788612,
+        "eff_generate_sec": 25.183334203000413,
+        "eff_end_to_end_sec": 25.3312493179983,
+        "eff_generated_tokens": 71,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "dcdea563c77544bb887de11d87619d3c",
+        "frame_token": "0f6432a5c6824bed9cd2603e00e5f61e",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c4,CAM_BACK,0.2874,0.5519>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297503412404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297503404799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297503420482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297503437558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297503447405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297503428113.jpg"
+        },
+        "pred": "The moving status of object <c4,CAM_BACK,0.2874,0.5519> is not clear from the given information. The image does not provide enough context to determine the exact direction or movement of the object. Therefore, the correct answer is not provided.",
+        "eff_preprocess_sec": 0.15824248100398108,
+        "eff_generate_sec": 2.4970703269937076,
+        "eff_end_to_end_sec": 2.6553128079976887,
+        "eff_generated_tokens": 62,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "97349fd50e694a5f994b0954047b96d0",
+        "frame_token": "c42bcde31f894f28bdaa7994f8a03a34",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black SUV to the back of the ego vehicle, a black unknown to the front left of the ego vehicle, a gray SUV to the back left of the ego vehicle, and an orange roadblock to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.7864,0.5759>, <c2,CAM_FRONT_LEFT,0.5500,0.5287>, <c3,CAM_BACK_LEFT,0.6630,0.7074>, and <c4,CAM_BACK,0.2224,0.7056>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385270612410.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385270604799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385270620482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385270637558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385270647405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385270628113.jpg"
+        },
+        "pred": "The important objects in the current scene include the construction site, the crane, the truck, and the cars. These objects are crucial for understanding the context and potential hazards in the area. The construction site indicates ongoing development, which could affect the traffic flow and the safety of the drivers. The crane and truck suggest that there is heavy machinery in the area, which might require extra caution and awareness. The cars are also present, indicating that the area is accessible for vehicles.",
+        "eff_preprocess_sec": 0.1586127399932593,
+        "eff_generate_sec": 3.1467756950005423,
+        "eff_end_to_end_sec": 3.3053884349938016,
+        "eff_generated_tokens": 95,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "97349fd50e694a5f994b0954047b96d0",
+        "frame_token": "c42bcde31f894f28bdaa7994f8a03a34",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.7864,0.5759>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385270612410.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385270604799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385270620482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385270637558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385270647405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385270628113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.7864,0.5759> is not specified in the given information.",
+        "eff_preprocess_sec": 0.16086538298986852,
+        "eff_generate_sec": 1.0482689169875812,
+        "eff_end_to_end_sec": 1.2091342999774497,
+        "eff_generated_tokens": 35,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "4a4d09496d594c7385a1ec227bdb3a7f",
+        "frame_token": "d885687979384c1eb6bf37a5a0b8d9c3",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white sedan car to the back of the ego vehicle, a white sedan to the front of the ego vehicle, a black SUV to the back of the ego vehicle, and a red and white truck to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.6031,0.5463>, <c2,CAM_FRONT,0.8245,0.5491>, <c3,CAM_BACK,0.2396,0.5398>, and <c4,CAM_FRONT,0.4468,0.5158>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289816662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537289816654811.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537289816670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537289816689759.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289816697405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537289816678113.jpg"
+        },
+        "pred": "The important objects in the current scene include the truck, the car, the traffic lights, and the rain. The truck is driving on the road, the car is stopped at the traffic light, and the traffic lights are controlling the flow of traffic. The rain is affecting the visibility and driving conditions.",
+        "eff_preprocess_sec": 0.15096559000085108,
+        "eff_generate_sec": 2.2852872170042247,
+        "eff_end_to_end_sec": 2.4362528070050757,
+        "eff_generated_tokens": 61,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "4a4d09496d594c7385a1ec227bdb3a7f",
+        "frame_token": "d885687979384c1eb6bf37a5a0b8d9c3",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c3,CAM_BACK,0.2396,0.5398>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289816662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537289816654811.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537289816670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537289816689759.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289816697405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537289816678113.jpg"
+        },
+        "pred": "The moving status of object <c3,CAM_BACK,0.2396,0.5398> is not clear from the given information. The image shows a moving object on the road, but the exact direction and speed are not specified. Therefore, the correct answer cannot be determined from the given information.",
+        "eff_preprocess_sec": 0.14065076498081908,
+        "eff_generate_sec": 1.9087632689916063,
+        "eff_end_to_end_sec": 2.0494140339724254,
+        "eff_generated_tokens": 68,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "5c76a3728b8b4d02ae20bd69fb928aa1",
+        "frame_token": "abfad6a00c194660abc85b9a1f215190",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the back of the ego vehicle, a white truck to the front right of the ego vehicle, a pedestrian wearing gray clothes to the back right of the ego vehicle, a white truck to the back of the ego vehicle, a black sedan car to the front of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.4286,0.5528>, <c2,CAM_FRONT_RIGHT,0.5984,0.4926>, <c3,CAM_BACK_RIGHT,0.7542,0.6436>, <c4,CAM_BACK,0.2729,0.5574>, <c5,CAM_FRONT,0.2068,0.5898>, and <c6,CAM_FRONT,0.6416,0.2276>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537290306912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537290306904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537290306920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537290306937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537290306947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537290306928113.jpg"
+        },
+        "pred": "The important objects in the current scene include the cars, trucks, and buildings. The cars are moving through the intersection, and the trucks are parked or moving along the street. The buildings in the background provide context to the location, indicating that this scene is likely in an urban area. The rain and wet road conditions suggest that it is a rainy day, which could affect the driving conditions.",
+        "eff_preprocess_sec": 0.15397395999752916,
+        "eff_generate_sec": 2.711273612017976,
+        "eff_end_to_end_sec": 2.8652475720155053,
+        "eff_generated_tokens": 79,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "5c76a3728b8b4d02ae20bd69fb928aa1",
+        "frame_token": "abfad6a00c194660abc85b9a1f215190",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.4286,0.5528>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537290306912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537290306904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537290306920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537290306937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537290306947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537290306928113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.4286,0.5528> is not clear from the given information. It could be turning right, turning left, or going ahead. Without more context or additional information, it is not possible to determine the exact status of the object. Therefore, the correct answer is C. Going ahead.",
+        "eff_preprocess_sec": 0.1649804119952023,
+        "eff_generate_sec": 1.9731880759936757,
+        "eff_end_to_end_sec": 2.138168487988878,
+        "eff_generated_tokens": 79,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "62ac9e73d0eb4c7a9b537384270efb2f",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a silver pickup truck to the back of the ego vehicle, a black SUV to the front left of the ego vehicle, a blue and white checkered clothes pedestrians to the front right of the ego vehicle, and a red light to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.4078,0.6083>, <c2,CAM_FRONT_LEFT,0.5547,0.7917>, <c3,CAM_FRONT_RIGHT,0.5094,0.6111>, and <c4,CAM_BACK,0.6889,0.3447>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867373862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867373854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867373870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867373887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867373897405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867373878113.jpg"
+        },
+        "pred": "The important objects in the current scene include the black car, the white bus, the statue, and the tall building. The black car is driving on the road, the white bus is waiting at the traffic light, and the statue is located on the side of the road. The tall building is also visible in the background.",
+        "eff_preprocess_sec": 0.13729661898105405,
+        "eff_generate_sec": 2.2813514360168483,
+        "eff_end_to_end_sec": 2.4186480549979024,
+        "eff_generated_tokens": 66,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "62ac9e73d0eb4c7a9b537384270efb2f",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.4078,0.6083>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867373862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867373854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867373870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867373887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867373897405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867373878113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.4078,0.6083> is C. Going ahead.",
+        "eff_preprocess_sec": 0.1477736700035166,
+        "eff_generate_sec": 0.8682288400013931,
+        "eff_end_to_end_sec": 1.0160025100049097,
+        "eff_generated_tokens": 33,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "36b6aa58462449b1b9285954cede8f22",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a silver truck to the back of the ego vehicle, a black sedan to the front of the ego vehicle, and a woman wearing blue jeans to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.3783,0.5889>, <c2,CAM_FRONT,0.3901,0.6991>, and <c3,CAM_FRONT_RIGHT,0.4562,0.7824>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867371912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867371904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867371920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867371937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867371947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867371928113.jpg"
+        },
+        "pred": "The important objects in the current scene include the vehicles, pedestrians, and the traffic light. The vehicles are moving through the intersection, and the pedestrians are crossing the street. The traffic light is controlling the flow of traffic.",
+        "eff_preprocess_sec": 0.14519262500107288,
+        "eff_generate_sec": 1.868167266016826,
+        "eff_end_to_end_sec": 2.013359891017899,
+        "eff_generated_tokens": 45,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "36b6aa58462449b1b9285954cede8f22",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.3783,0.5889>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867371912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867371904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867371920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867371937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867371947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867371928113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.3783,0.5889> is not specified in the given information.",
+        "eff_preprocess_sec": 0.1192898610024713,
+        "eff_generate_sec": 0.8752206949866377,
+        "eff_end_to_end_sec": 0.994510555989109,
+        "eff_generated_tokens": 35,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "212fd4c9c9174635a7ec76051c8eec9e",
+        "frame_token": "f694bb78aa7c47b98e6bd2ad1b2329f0",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a red car to the back right of the ego vehicle, a person riding a black motorcycle to the back left of the ego vehicle, a white truck to the back left of the ego vehicle, and a white sedan to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK_RIGHT,0.8854,0.5806>, <c2,CAM_BACK_LEFT,0.1021,0.6861>, <c3,CAM_BACK_LEFT,0.7464,0.5047>, and <c4,CAM_FRONT_RIGHT,0.2667,0.5547>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986223262460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_LEFT__1538986223254844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986223270356.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-16-03-24+0800__CAM_BACK__1538986223287525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-16-03-24+0800__CAM_BACK_LEFT__1538986223297423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_BACK_RIGHT__1538986223277893.jpg"
+        },
+        "pred": "The important objects in the current scene include the car, the road, the buildings, and the trees. The car is moving on the road, and the buildings and trees are stationary. The car is approaching the intersection, and the trees are in the background.",
+        "eff_preprocess_sec": 0.2596860929916147,
+        "eff_generate_sec": 2.0180047129979357,
+        "eff_end_to_end_sec": 2.2776908059895504,
+        "eff_generated_tokens": 53,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "212fd4c9c9174635a7ec76051c8eec9e",
+        "frame_token": "f694bb78aa7c47b98e6bd2ad1b2329f0",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK_RIGHT,0.8854,0.5806>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986223262460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_LEFT__1538986223254844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986223270356.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-16-03-24+0800__CAM_BACK__1538986223287525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-16-03-24+0800__CAM_BACK_LEFT__1538986223297423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_BACK_RIGHT__1538986223277893.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK_RIGHT,0.8854,0.5806> is not clear from the given information. It could be either turning right or going ahead.",
+        "eff_preprocess_sec": 0.14502755299326964,
+        "eff_generate_sec": 1.0607355200045276,
+        "eff_end_to_end_sec": 1.2057630729977973,
+        "eff_generated_tokens": 46,
+        "eff_input_tokens": 547
+    },
+    {
+        "scene_token": "6207269cb9474c14b01f9610b2ee30aa",
+        "frame_token": "c42eec2e6901462ca66b926d1154cc44",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the back of the ego vehicle, a white sedan to the front left of the ego vehicle, a brown car to the back of the ego vehicle, and a white sedan to the back left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.5344,0.5009>, <c2,CAM_FRONT_LEFT,0.6552,0.5703>, <c3,CAM_BACK,0.9366,0.5776>, and <c4,CAM_BACK_LEFT,0.6458,0.6056>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-06-15-06-32-0400__CAM_FRONT__1533582489662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_LEFT__1533582489654799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_RIGHT__1533582489670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-06-15-06-32-0400__CAM_BACK__1533582489687563.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-06-15-06-32-0400__CAM_BACK_LEFT__1533582489697408.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_BACK_RIGHT__1533582489678113.jpg"
+        },
+        "pred": "The important objects in the current scene include the parking garage, the crosswalk, and the traffic lights. The parking garage is a multi-story structure with a large entrance, and the crosswalk is a designated area for pedestrians to cross the street. The traffic lights are essential for controlling the flow of traffic and ensuring safety at the intersection.",
+        "eff_preprocess_sec": 0.13997465401189402,
+        "eff_generate_sec": 2.3465972570120357,
+        "eff_end_to_end_sec": 2.4865719110239297,
+        "eff_generated_tokens": 68,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "6207269cb9474c14b01f9610b2ee30aa",
+        "frame_token": "c42eec2e6901462ca66b926d1154cc44",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.5344,0.5009>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-06-15-06-32-0400__CAM_FRONT__1533582489662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_LEFT__1533582489654799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_RIGHT__1533582489670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-06-15-06-32-0400__CAM_BACK__1533582489687563.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-06-15-06-32-0400__CAM_BACK_LEFT__1533582489697408.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_BACK_RIGHT__1533582489678113.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_BACK,0.5344,0.5009> is not clear from the given information. It could be turning right, turning left, or going ahead.",
+        "eff_preprocess_sec": 0.14416264899773523,
+        "eff_generate_sec": 1.279837438982213,
+        "eff_end_to_end_sec": 1.4240000879799481,
+        "eff_generated_tokens": 48,
+        "eff_input_tokens": 546
+    },
+    {
+        "scene_token": "c0d3796765e2452d990309b2568adac5",
+        "frame_token": "464a82c88b4a420a9639cca247918a7c",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the front of the ego vehicle, a person wearing yellow clothes to the back of the ego vehicle, a gray SUV to the back of the ego vehicle, and a person wearing yellow clothes to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.2432,0.4972>, <c2,CAM_BACK,0.8771,0.6000>, <c3,CAM_BACK,0.5734,0.6278>, and <c4,CAM_FRONT_RIGHT,0.3901,0.6241>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115172412460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_LEFT__1533115172404844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_RIGHT__1533115172420339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115172437525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-01-17-13-57+0800__CAM_BACK_LEFT__1533115172447423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_BACK_RIGHT__1533115172427893.jpg"
+        },
+        "pred": "The important objects in the current scene include the excavator, the red barriers, the traffic cones, and the vehicles on the road. These objects are crucial for understanding the current traffic situation and the potential hazards or obstacles that the driver might encounter.",
+        "eff_preprocess_sec": 0.15474518001428805,
+        "eff_generate_sec": 1.9616796869959217,
+        "eff_end_to_end_sec": 2.1164248670102097,
+        "eff_generated_tokens": 50,
+        "eff_input_tokens": 516
+    },
+    {
+        "scene_token": "c0d3796765e2452d990309b2568adac5",
+        "frame_token": "464a82c88b4a420a9639cca247918a7c",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.2432,0.4972>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115172412460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_LEFT__1533115172404844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_RIGHT__1533115172420339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115172437525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-01-17-13-57+0800__CAM_BACK_LEFT__1533115172447423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_BACK_RIGHT__1533115172427893.jpg"
+        },
+        "pred": "The moving status of object <c1,CAM_FRONT,0.2432,0.4972> is not specified in the given information.",
+        "eff_preprocess_sec": 0.18909180199261755,
+        "eff_generate_sec": 0.9514662839937955,
+        "eff_end_to_end_sec": 1.140558085986413,
+        "eff_generated_tokens": 35,
+        "eff_input_tokens": 546
+    }
+]

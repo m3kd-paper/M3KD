@@ -1,0 +1,55 @@
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 533626.46it/s]
+PTBTokenizer tokenized 1362 tokens at 54348.15 tokens per second.
+PTBTokenizer tokenized 5377 tokens at 187749.45 tokens per second.
+PTBTokenizer tokenized 153 tokens at 6763.42 tokens per second.
+PTBTokenizer tokenized 881 tokens at 30369.76 tokens per second.
+PTBTokenizer tokenized 676 tokens at 27991.36 tokens per second.
+PTBTokenizer tokenized 13851 tokens at 399803.89 tokens per second.
+Evaluation start!
+Final Scores:
+{
+    "perception": {
+        "MCQ": {
+            "accuracy": 0.7142857142857143
+        },
+        "VQA": {
+            "language_metrics": {
+                "Bleu_1": 0.10134414337527173,
+                "Bleu_2": 0.04950404186323334,
+                "Bleu_3": 0.019907953716383302,
+                "Bleu_4": 1.141625174950635e-06,
+                "ROUGE_L": 0.13546407263823473,
+                "CIDEr": 3.630254162549791e-282
+            }
+        }
+    },
+    "prediction": {
+        "VQA": {
+            "language_metrics": {
+                "Bleu_1": 0.08157894736831371,
+                "Bleu_2": 0.04975289585277549,
+                "Bleu_3": 0.034915593459743856,
+                "Bleu_4": 0.025072419444588937,
+                "ROUGE_L": 0.1403942952518767,
+                "CIDEr": 0.0
+            }
+        }
+    },
+    "planning": {
+        "VQA": {
+            "language_metrics": {
+                "Bleu_1": 0.027720823423273377,
+                "Bleu_2": 0.016267695978279432,
+                "Bleu_3": 0.010089753537693954,
+                "Bleu_4": 0.00597769021997552,
+                "ROUGE_L": 0.05313364863342161,
+                "CIDEr": 2.4078090190096257e-47
+            }
+        }
+    },
+    "behavior": {
+        "MCQ": {
+            "accuracy": 0.14285714285714285
+        }
+    }
+}

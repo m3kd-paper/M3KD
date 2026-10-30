@@ -1,0 +1,5 @@
+model,display_name,train_samples,train_runtime_s,train_runtime_h,train_samples_per_second,train_steps_per_second,train_loss,peak_vram_gib,source_json
+qwen2-vl-2b-kd-8000,+KD,7500.0,8889.3215,2.4692559722222223,0.844,0.105,0.16238273112471102,,/root/username/distillm-2/outputs/qwen2-vl-2b-kd-8000/train_results.json
+qwen2-vl-2b-speculative_kd-8000,+SpeculativeKD,7500.0,8897.2619,2.4714616388888886,0.843,0.105,0.1623758277999935,,/root/username/distillm-2/outputs/qwen2-vl-2b-speculative_kd-8000/train_results.json
+qwen2-vl-2b-distillm_v2-8000,+DistillM_v2,7500.0,9453.9531,2.6260980833333334,0.793,0.099,0.2341815082469643,,/root/username/distillm-2/outputs/qwen2-vl-2b-distillm_v2-8000/train_results.json
+qwen2-vl-2b-m3kd-micro4-8000-REJECTEDCURRICULUM-true,+M3KD,7500.0,9320.123,2.5889230555555556,0.805,0.101,0.2896969945606325,,/root/username/distillm-2/outputs/qwen2-vl-2b-m3kd-micro4-8000-REJECTEDCURRICULUM-true/train_results.json

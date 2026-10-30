@@ -1,0 +1,19 @@
+=== Ablation Study (Sample Size) - Qwen3 Perception MCQ Robustness ===
+
+model       2 samples 4 samples MacroMixing-No-MonteCarlo MacroMixing-MonteCarlo MacroMixing-8MonteCarlo
+biterror        0.643     0.643                     0.643                  0.643                   0.714
+bright          0.714     0.643                     0.714                  0.714                   0.714
+cameracrash     0.714     0.643                     0.714                  0.714                   0.714
+colorquant      0.714     0.714                     0.714                  0.714                   0.714
+fog             0.714     0.714                     0.714                  0.714                   0.714
+framelost       0.714     0.643                     0.643                  0.714                   0.714
+h256            0.643     0.714                     0.714                  0.714                   0.714
+lens            0.714     0.714                     0.714                  0.714                   0.714
+lowlight        0.714     0.714                     0.714                  0.714                   0.714
+motion          0.571     0.714                     0.714                  0.714                   0.714
+rain            0.714     0.714                     0.714                  0.714                   0.714
+saturate        0.714     0.714                     0.714                  0.714                   0.714
+snow            0.714     0.714                     0.714                  0.714                   0.714
+water           0.714     0.714                     0.714                  0.714                   0.714
+zoom            0.714     0.714                     0.714                  0.714                   0.714
+Average         0.695     0.695                     0.705                  0.710                   0.714

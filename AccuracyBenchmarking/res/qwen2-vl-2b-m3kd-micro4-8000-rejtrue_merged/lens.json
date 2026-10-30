@@ -1,0 +1,562 @@
+[
+    {
+        "scene_token": "dcdea563c77544bb887de11d87619d3c",
+        "frame_token": "0f6432a5c6824bed9cd2603e00e5f61e",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a gray car to the front right of the ego vehicle, a white truck to the front of the ego vehicle, a red car to the front of the ego vehicle, a white truck to the back of the ego vehicle, and a white truck to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_RIGHT,0.4151,0.5703>, <c2,CAM_FRONT,0.7714,0.4908>, <c3,CAM_FRONT,0.8896,0.5870>, <c4,CAM_BACK,0.2874,0.5519>, and <c5,CAM_FRONT_LEFT,0.4239,0.4528>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297503412404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297503404799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297503420482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297503437558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297503447405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297503428113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Truck**: A large white truck is driving on the road.\n2. **Cars**: Several cars are parked or driving on the road.\n3. **Buildings**: Tall buildings are visible in the background, indicating an urban setting.\n4. **Rain**: The scene is wet, suggesting it is raining.\n5. **Streetlights**: Streetlights are visible along the road, providing illumination.\n\nThese objects are crucial for understanding the driving context and making decisions related to traffic, weather, and safety."
+    },
+    {
+        "scene_token": "dcdea563c77544bb887de11d87619d3c",
+        "frame_token": "0f6432a5c6824bed9cd2603e00e5f61e",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c4,CAM_BACK,0.2874,0.5519>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297503412404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297503404799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297503420482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297503437558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297503447405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297503428113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c4,CAM_BACK,0.2874,0.5519>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "A. Going ahead."
+    },
+    {
+        "scene_token": "64ca274b5f69458bb5d21e0e2e071902",
+        "frame_token": "e56e169f25274dc1bf12c25363ef6ddc",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT_LEFT,0.2292,0.3686>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Turn right.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-15-26-58-0400__CAM_FRONT__1537299514862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_LEFT__1537299514854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_RIGHT__1537299514870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-15-26-58-0400__CAM_BACK__1537299514887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-15-26-58-0400__CAM_BACK_LEFT__1537299514897414.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299514878113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_FRONT_LEFT,0.2292,0.3686>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Turn right.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "A. Going ahead."
+    },
+    {
+        "scene_token": "c0d3796765e2452d990309b2568adac5",
+        "frame_token": "464a82c88b4a420a9639cca247918a7c",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the front of the ego vehicle, a person wearing yellow clothes to the back of the ego vehicle, a gray SUV to the back of the ego vehicle, and a person wearing yellow clothes to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.2432,0.4972>, <c2,CAM_BACK,0.8771,0.6000>, <c3,CAM_BACK,0.5734,0.6278>, and <c4,CAM_FRONT_RIGHT,0.3901,0.6241>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115172412460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_LEFT__1533115172404844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_RIGHT__1533115172420339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115172437525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-01-17-13-57+0800__CAM_BACK_LEFT__1533115172447423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_BACK_RIGHT__1533115172427893.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Road**: The road is wet, indicating recent rain.\n2. **Traffic**: There are cars on the road, including a red car and a white car.\n3. **Construction**: There are orange barriers and a construction site with a digger.\n4. **Buildings**: There are buildings in the background, including a tall building and a shorter one.\n5. **People**: There are people walking on the sidewalk, including a man in a red shirt and a woman in a white shirt.\n6. **Streetlights**: There are streetlights along the road.\n7. **Trees**: There are trees on the side of the road.\n8. **Sidewalk**: There is a sidewalk with a man walking on it.\n\nThese objects are relevant for the future reasoning and driving decision because they provide context about the current driving conditions, the presence of construction, and the presence of people and vehicles."
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "cc0114d0a58a49548f5bac6786851a08",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.8026,0.6222>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290861262404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290861254799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290861270482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290861287773.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290861297405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290861278113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.8026,0.6222>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "C. Going ahead."
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "818a1bd7b7394194a85163c8d95958a9",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black small sedan to the back of the ego vehicle, a black SUV to the back left of the ego vehicle, and a black small car to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.7380,0.5926>, <c2,CAM_BACK_LEFT,0.1906,0.6426>, and <c3,CAM_FRONT_LEFT,0.7547,0.5703>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290858162404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290858154799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290858170482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290858187559.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290858197405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290858178113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Buildings**: The buildings in the background are likely residential or commercial structures.\n2. **Trees**: There are trees visible on the right side of the image, providing some greenery and possibly indicating a park or a landscaped area.\n3. **Road**: The road is wet, indicating recent rain or ongoing rain.\n4. **Cars**: There are cars parked along the side of the road, suggesting a residential or commercial area.\n5. **Streetlights**: There are streetlights visible, which are essential for visibility during low-light conditions.\n\nThese objects are relevant for understanding the environment and planning the next steps in the driving scenario."
+    },
+    {
+        "scene_token": "212fd4c9c9174635a7ec76051c8eec9e",
+        "frame_token": "f694bb78aa7c47b98e6bd2ad1b2329f0",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a red car to the back right of the ego vehicle, a person riding a black motorcycle to the back left of the ego vehicle, a white truck to the back left of the ego vehicle, and a white sedan to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK_RIGHT,0.8854,0.5806>, <c2,CAM_BACK_LEFT,0.1021,0.6861>, <c3,CAM_BACK_LEFT,0.7464,0.5047>, and <c4,CAM_FRONT_RIGHT,0.2667,0.5547>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986223262460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_LEFT__1538986223254844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986223270356.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-16-03-24+0800__CAM_BACK__1538986223287525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-16-03-24+0800__CAM_BACK_LEFT__1538986223297423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_BACK_RIGHT__1538986223277893.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Road**: The road is visible in the image, indicating that it is a part of the driving environment.\n2. **Buildings**: There are buildings visible in the background, which could be residential or commercial structures.\n3. **Trees**: There are trees along the side of the road, providing some greenery and possibly shade.\n4. **Sidewalk**: A sidewalk is visible on the right side of the road, indicating pedestrian access.\n5. **People**: There are people visible on the sidewalk, suggesting that the area is a public space.\n6. **Streetlights**: Streetlights are present along the road, providing illumination during nighttime or low-light conditions.\n\nThese objects are relevant for the future reasoning and driving decision-making as they provide context about the environment, potential hazards, and the layout of the area."
+    },
+    {
+        "scene_token": "c0d3796765e2452d990309b2568adac5",
+        "frame_token": "464a82c88b4a420a9639cca247918a7c",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.2432,0.4972>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115172412460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_LEFT__1533115172404844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_RIGHT__1533115172420339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115172437525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-01-17-13-57+0800__CAM_BACK_LEFT__1533115172447423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_BACK_RIGHT__1533115172427893.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_FRONT,0.2432,0.4972>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "A. Going ahead."
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "cc0114d0a58a49548f5bac6786851a08",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black car to the back of the ego vehicle, a black sedan to the front of the ego vehicle, a silver white pickup truck to the front left of the ego vehicle, a black sedan car to the front left of the ego vehicle, a black SUV to the front right of the ego vehicle, and a black sedan to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.8026,0.6222>, <c2,CAM_FRONT,0.8359,0.6167>, <c3,CAM_FRONT_LEFT,0.6120,0.6083>, <c4,CAM_FRONT_LEFT,0.8489,0.5852>, <c5,CAM_FRONT_RIGHT,0.2016,0.7249>, and <c6,CAM_FRONT_LEFT,0.2318,0.7176>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290861262404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290861254799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290861270482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290861287773.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290861297405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290861278113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Cars**: There are several cars visible in the image, including a black SUV and a silver car.\n2. **Buildings**: There are two buildings visible in the background, one on the left and one on the right.\n3. **Trees**: There are trees visible on the right side of the image.\n4. **Street**: The street is wet, indicating recent rain.\n5. **Weather**: The sky is overcast, suggesting a rainy day.\n\nThese objects are relevant for the future reasoning and driving decision because they provide context for the driving conditions and potential hazards. For example, the wet road surface and overcast weather might affect the driving behavior, such as slowing down or increasing braking distance."
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "62ac9e73d0eb4c7a9b537384270efb2f",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.4078,0.6083>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867373862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867373854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867373870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867373887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867373897405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867373878113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.4078,0.6083>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "C. Going ahead."
+    },
+    {
+        "scene_token": "212fd4c9c9174635a7ec76051c8eec9e",
+        "frame_token": "f694bb78aa7c47b98e6bd2ad1b2329f0",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK_RIGHT,0.8854,0.5806>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986223262460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_LEFT__1538986223254844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986223270356.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-16-03-24+0800__CAM_BACK__1538986223287525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-16-03-24+0800__CAM_BACK_LEFT__1538986223297423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_BACK_RIGHT__1538986223277893.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK_RIGHT,0.8854,0.5806>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The moving status of object <c1,CAM_BACK_RIGHT,0.8854,0.5806> is not clear from the provided image. It could be either turning right or going ahead."
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "36b6aa58462449b1b9285954cede8f22",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a silver truck to the back of the ego vehicle, a black sedan to the front of the ego vehicle, and a woman wearing blue jeans to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.3783,0.5889>, <c2,CAM_FRONT,0.3901,0.6991>, and <c3,CAM_FRONT_RIGHT,0.4562,0.7824>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867371912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867371904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867371920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867371937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867371947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867371928113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Pedestrians**: There are several pedestrians walking on the sidewalk.\n2. **Cars**: There is a car on the road, and a bus is also visible.\n3. **Buildings**: There are buildings in the background, including a tall one on the left and a shorter one on the right.\n4. **Streetlights**: There are streetlights visible in the background.\n5. **Traffic Lights**: There are traffic lights visible in the background.\n\nThese objects are relevant for the future reasoning and driving decision because they provide context for the environment and potential hazards."
+    },
+    {
+        "scene_token": "97349fd50e694a5f994b0954047b96d0",
+        "frame_token": "c42bcde31f894f28bdaa7994f8a03a34",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black SUV to the back of the ego vehicle, a black unknown to the front left of the ego vehicle, a gray SUV to the back left of the ego vehicle, and an orange roadblock to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.7864,0.5759>, <c2,CAM_FRONT_LEFT,0.5500,0.5287>, <c3,CAM_BACK_LEFT,0.6630,0.7074>, and <c4,CAM_BACK,0.2224,0.7056>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385270612410.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385270604799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385270620482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385270637558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385270647405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385270628113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Construction Site**: The presence of a construction site with cranes and machinery indicates ongoing development or renovation work.\n2. **Road**: The road is visible, and it appears to be a two-lane road with a median strip.\n3. **Buildings**: There are buildings in the background, suggesting that the area is urban or industrial.\n4. **Traffic**: There are vehicles on the road, including a car and a truck, indicating that the area is accessible to traffic.\n5. **Fence**: A fence is present, likely to separate the construction site from the rest of the area.\n6. **Signs**: There are signs on the fence, possibly indicating directions or warnings.\n\nThese objects are relevant for the future reasoning and driving decision because they provide context about the environment and potential hazards. For example, the construction site might require drivers to be cautious of moving machinery and to maintain a safe distance from the construction area. The presence of vehicles on the road indicates that the area is accessible to traffic, which could affect the driver's decision to change lanes or speed. The fence and signs on the fence might provide information about the location or the rules of the area."
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "62ac9e73d0eb4c7a9b537384270efb2f",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a silver pickup truck to the back of the ego vehicle, a black SUV to the front left of the ego vehicle, a blue and white checkered clothes pedestrians to the front right of the ego vehicle, and a red light to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.4078,0.6083>, <c2,CAM_FRONT_LEFT,0.5547,0.7917>, <c3,CAM_FRONT_RIGHT,0.5094,0.6111>, and <c4,CAM_BACK,0.6889,0.3447>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867373862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867373854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867373870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867373887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867373897405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867373878113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are the cars, the pedestrians, the bridge, and the buildings in the background. These objects are relevant for the future reasoning and driving decision as they will influence the driver's path and decision-making."
+    },
+    {
+        "scene_token": "df8dfada99a04a81bd1b102eeb84e9bc",
+        "frame_token": "e3f986e5d53f416492bdf255e82bff52",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black car to the front of the ego vehicle, a person riding a bicycle to the front of the ego vehicle, a person wearing a pink shirt and black pants to the front of the ego vehicle, a white SUV to the front right of the ego vehicle, a black sedan to the back right of the ego vehicle, and a black sedan to the back of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.6604,0.6314>, <c2,CAM_FRONT,0.2052,0.6092>, <c3,CAM_FRONT,0.0203,0.5991>, <c4,CAM_FRONT_RIGHT,0.4313,0.6758>, <c5,CAM_BACK_RIGHT,0.2409,0.7426>, and <c6,CAM_BACK,0.1351,0.6314>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535574095912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535574095904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535574095920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535574095937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535574095947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535574095928113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Car**: The car is a Nissan, which is a common make in the automotive industry.\n2. **Crane**: The crane is a construction equipment used for lifting and moving heavy objects.\n3. **Building**: The building in the background is a tall structure, likely a residential or commercial building.\n4. **People**: There are people walking on the sidewalk, indicating a public area.\n5. **Road**: The road is a multi-lane road, with vehicles and pedestrians sharing the space.\n6. **Water**: There is a body of water visible in the background, which could be a river, lake, or a large body of water.\n7. **Trees**: There are trees visible in the background, adding to the natural elements of the scene.\n\nThese objects are relevant for the future reasoning and driving decision-making as they provide context for the environment and potential hazards."
+    },
+    {
+        "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+        "frame_token": "f589ce80644d46c0ab3c6e764321d5ef",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.5792,0.6213>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402419012460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402419004844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_RIGHT__1532402419020339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-13-19+0800__CAM_BACK__1532402419037525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-13-19+0800__CAM_BACK_LEFT__1532402419047423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_BACK_RIGHT__1532402419027893.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_FRONT,0.5792,0.6213>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The moving status of object <c1,CAM_FRONT,0.5792,0.6213> is B. Going ahead."
+    },
+    {
+        "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+        "frame_token": "f589ce80644d46c0ab3c6e764321d5ef",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a blue and white car to the front of the ego vehicle, a blue truck to the back of the ego vehicle, a white commercial vehicle to the front right of the ego vehicle, a pedestrian holding a black umbrella to the front left of the ego vehicle, a traffic light with green light on to the front of the ego vehicle, and a traffic light with green light on to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.5792,0.6213>, <c2,CAM_BACK,0.4125,0.5231>, <c3,CAM_FRONT_RIGHT,0.4349,0.7661>, <c4,CAM_FRONT_LEFT,0.6239,0.5991>, <c5,CAM_FRONT,0.6933,0.4310>, and <c6,CAM_FRONT,0.4500,0.4412>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402419012460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402419004844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_RIGHT__1532402419020339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-13-19+0800__CAM_BACK__1532402419037525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-13-19+0800__CAM_BACK_LEFT__1532402419047423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_BACK_RIGHT__1532402419027893.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Car**: The white car is the primary vehicle in the scene.\n2. **Building**: The tall building in the background is a prominent structure.\n3. **Sidewalk**: The sidewalk is visible on the right side of the image.\n4. **Streetlights**: Streetlights are present on the right side of the image.\n5. **Traffic Lights**: Traffic lights are visible at the intersection.\n6. **Road Markings**: Road markings are present on the road.\n7. **Pedestrian Bridge**: A pedestrian bridge is visible on the left side of the image.\n\nThese objects are crucial for understanding the current driving scenario and planning future actions."
+    },
+    {
+        "scene_token": "5c76a3728b8b4d02ae20bd69fb928aa1",
+        "frame_token": "abfad6a00c194660abc85b9a1f215190",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the back of the ego vehicle, a white truck to the front right of the ego vehicle, a pedestrian wearing gray clothes to the back right of the ego vehicle, a white truck to the back of the ego vehicle, a black sedan car to the front of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.4286,0.5528>, <c2,CAM_FRONT_RIGHT,0.5984,0.4926>, <c3,CAM_BACK_RIGHT,0.7542,0.6436>, <c4,CAM_BACK,0.2729,0.5574>, <c5,CAM_FRONT,0.2068,0.5898>, and <c6,CAM_FRONT,0.6416,0.2276>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537290306912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537290306904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537290306920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537290306937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537290306947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537290306928113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Buildings**: The buildings in the background are tall and modern, indicating a cityscape.\n2. **Cranes**: There are several cranes in the background, suggesting ongoing construction work.\n3. **Traffic**: There are vehicles on the road, including cars and trucks, indicating a busy intersection.\n4. **Rain**: The scene is wet, indicating recent or ongoing rain.\n5. **Streetlights**: Streetlights are visible, providing illumination to the area.\n6. **Pedestrians**: There are people walking on the sidewalk, indicating a pedestrian-friendly area.\n7. **Traffic Lights**: Traffic lights are visible, controlling the flow of traffic.\n8. **Road Markings**: White lines on the road indicate pedestrian crossings and other traffic rules.\n\nThese objects are crucial for understanding the driving context and making informed decisions."
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "818a1bd7b7394194a85163c8d95958a9",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.7380,0.5926>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "C",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290858162404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290858154799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290858170482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290858187559.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290858197405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290858178113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.7380,0.5926>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "C. Going ahead."
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "36b6aa58462449b1b9285954cede8f22",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.3783,0.5889>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867371912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867371904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867371920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867371937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867371947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867371928113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.3783,0.5889>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "B. Going ahead."
+    },
+    {
+        "scene_token": "4a4d09496d594c7385a1ec227bdb3a7f",
+        "frame_token": "d885687979384c1eb6bf37a5a0b8d9c3",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c3,CAM_BACK,0.2396,0.5398>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289816662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537289816654811.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537289816670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537289816689759.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289816697405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537289816678113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c3,CAM_BACK,0.2396,0.5398>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The moving status of object <c3,CAM_BACK,0.2396,0.5398> is not clear from the image. It could be either turning left or going ahead."
+    },
+    {
+        "scene_token": "97349fd50e694a5f994b0954047b96d0",
+        "frame_token": "c42bcde31f894f28bdaa7994f8a03a34",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.7864,0.5759>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385270612410.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385270604799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385270620482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385270637558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385270647405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385270628113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.7864,0.5759>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The moving status of object <c1,CAM_BACK,0.7864,0.5759> is C. Going ahead."
+    },
+    {
+        "scene_token": "4a4d09496d594c7385a1ec227bdb3a7f",
+        "frame_token": "d885687979384c1eb6bf37a5a0b8d9c3",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white sedan car to the back of the ego vehicle, a white sedan to the front of the ego vehicle, a black SUV to the back of the ego vehicle, and a red and white truck to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.6031,0.5463>, <c2,CAM_FRONT,0.8245,0.5491>, <c3,CAM_BACK,0.2396,0.5398>, and <c4,CAM_FRONT,0.4468,0.5158>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289816662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537289816654811.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537289816670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537289816689759.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289816697405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537289816678113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Buildings**: There are buildings visible in the background, indicating an urban setting.\n2. **Street**: The street is wet, suggesting recent rain.\n3. **Traffic Lights**: There are traffic lights visible, indicating a controlled intersection.\n4. **Pedestrians**: There are people visible on the sidewalk, indicating a populated area.\n5. **Street Furniture**: There is a bench on the sidewalk, providing seating for pedestrians.\n6. **Street Signs**: There are street signs visible, providing information to drivers.\n\nThese objects are relevant for the future reasoning and driving decision-making as they provide context about the environment, traffic conditions, and pedestrian activity."
+    },
+    {
+        "scene_token": "df8dfada99a04a81bd1b102eeb84e9bc",
+        "frame_token": "e3f986e5d53f416492bdf255e82bff52",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.6604,0.6314>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535574095912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535574095904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535574095920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535574095937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535574095947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535574095928113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_FRONT,0.6604,0.6314>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The moving status of object <c1,CAM_FRONT,0.6604,0.6314> is B. Going ahead."
+    },
+    {
+        "scene_token": "64ca274b5f69458bb5d21e0e2e071902",
+        "frame_token": "e56e169f25274dc1bf12c25363ef6ddc",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the front left of the ego vehicle, a black sedan to the back of the ego vehicle, a black sedan to the front right of the ego vehicle, and a black SUV to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_LEFT,0.2292,0.3686>, <c2,CAM_BACK,0.6146,0.6417>, <c3,CAM_FRONT_RIGHT,0.5604,0.5324>, and <c4,CAM_FRONT,0.5646,0.5528>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-15-26-58-0400__CAM_FRONT__1537299514862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_LEFT__1537299514854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_RIGHT__1537299514870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-15-26-58-0400__CAM_BACK__1537299514887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-15-26-58-0400__CAM_BACK_LEFT__1537299514897414.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299514878113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Truck**: A large truck is driving on the road, which is a significant object for the driver to be aware of.\n2. **Building**: A building is visible in the background, providing context to the location and the type of environment.\n3. **Streetlights**: Streetlights are present, indicating that the area is well-lit, which is important for visibility and safety.\n4. **Traffic Lights**: Traffic lights are visible, indicating that the driver needs to follow traffic rules and signals.\n5. **Rain**: The presence of rain suggests that the weather conditions are wet, which can affect visibility and traction.\n\nThese objects are crucial for the driver to be aware of and react accordingly to maintain safety and navigate the road effectively."
+    },
+    {
+        "scene_token": "6207269cb9474c14b01f9610b2ee30aa",
+        "frame_token": "c42eec2e6901462ca66b926d1154cc44",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the back of the ego vehicle, a white sedan to the front left of the ego vehicle, a brown car to the back of the ego vehicle, and a white sedan to the back left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.5344,0.5009>, <c2,CAM_FRONT_LEFT,0.6552,0.5703>, <c3,CAM_BACK,0.9366,0.5776>, and <c4,CAM_BACK_LEFT,0.6458,0.6056>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-06-15-06-32-0400__CAM_FRONT__1533582489662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_LEFT__1533582489654799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_RIGHT__1533582489670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-06-15-06-32-0400__CAM_BACK__1533582489687563.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-06-15-06-32-0400__CAM_BACK_LEFT__1533582489697408.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_BACK_RIGHT__1533582489678113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "The important objects in the current scene are:\n\n1. **Building**: The building in the background is likely a commercial or residential structure.\n2. **Street**: The road in front of the building is a typical urban street.\n3. **Sidewalk**: The sidewalk is visible on the right side of the image.\n4. **Traffic Signs**: There are traffic signs on the sidewalk, indicating directions or regulations for drivers.\n5. **Streetlights**: Streetlights are present along the sidewalk, providing illumination for the area.\n6. **Parking Structure**: There is a parking structure visible in the background, indicating the presence of parking facilities.\n7. **Trees**: There are trees on the right side of the image, providing some greenery and shade.\n\nThese objects are relevant for the future reasoning and driving decision-making as they provide context and information about the environment, such as the presence of parking facilities, traffic regulations, and the general layout of the area."
+    },
+    {
+        "scene_token": "5c76a3728b8b4d02ae20bd69fb928aa1",
+        "frame_token": "abfad6a00c194660abc85b9a1f215190",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.4286,0.5528>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537290306912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537290306904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537290306920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537290306937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537290306947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537290306928113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.4286,0.5528>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "C. Going ahead."
+    },
+    {
+        "scene_token": "6207269cb9474c14b01f9610b2ee30aa",
+        "frame_token": "c42eec2e6901462ca66b926d1154cc44",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.5344,0.5009>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-06-15-06-32-0400__CAM_FRONT__1533582489662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_LEFT__1533582489654799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_RIGHT__1533582489670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-06-15-06-32-0400__CAM_BACK__1533582489687563.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-06-15-06-32-0400__CAM_BACK_LEFT__1533582489697408.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_BACK_RIGHT__1533582489678113.jpg"
+        },
+        "prompts": "<|im_start|>system\nYou are a smart autonomous driving assistant responsible for analyzing and responding to driving scenarios. You are provided with 4 camera images in the sequence [CAM_FRONT, CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK]. Each image has normalized coordinates from [0, 1], with (0,0) at the top left and (1,1) at the bottom right.\n\nInstructions:\n1. Answer Requirements:\n- For multiple-choice questions, provide the selected answer choice along with an explanation.\n- For \u201cis\u201d or \u201cis not\u201d questions, respond with a \u201cYes\u201d or \u201cNo\u201d, along with an explanation.\n- For open-ended perception and prediction questions, related objects to which the camera.\n\n2. Key Information for Driving Context:\n- When answering, focus on object attributes (e.g., categories, statuses, visual descriptions) and motions (e.g., speed, action, acceleration) relevant to driving safety and decision-making.\n\nUse the images and coordinate information to respond accurately to questions related to perception, prediction, planning, or behavior, based on the question requirements.\n<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>What is the moving status of object <c1,CAM_BACK,0.5344,0.5009>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "pred": "C. Going ahead."
+    }
+]

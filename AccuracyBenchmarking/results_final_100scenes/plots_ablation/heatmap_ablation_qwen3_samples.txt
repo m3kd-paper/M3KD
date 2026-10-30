@@ -1,0 +1,9 @@
+=== Ablation Study (Sample Size) - Qwen3 Perception MCQ Robustness ===
+
+model    2 samples 4 samples MacroMixing-No-MonteCarlo MacroMixing-MonteCarlo MacroMixing-8MonteCarlo
+h256            --        --                     0.690                  0.690                   0.698
+motion          --        --                     0.690                  0.690                   0.690
+rain            --        --                     0.690                  0.690                   0.690
+saturate        --        --                     0.690                  0.690                   0.690
+water           --        --                     0.690                  0.690                   0.690
+Average         --        --                     0.690                  0.690                   0.692

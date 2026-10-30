@@ -1,0 +1,36 @@
+model,task,metric,mean_score,std_score,n_corruptions
+2 samples,perception,MCQ.accuracy,0.6952380952380952,0.04240120283604741,15
+2 samples,perception,VQA.language_metrics.Bleu_1,0.10142618793660117,0.005494646195070907,15
+2 samples,perception,VQA.language_metrics.Bleu_2,0.04956276512536079,0.003815695112097592,15
+2 samples,perception,VQA.language_metrics.Bleu_3,0.020617766657218404,0.0022284271246556736,15
+2 samples,perception,VQA.language_metrics.Bleu_4,0.0011971652167801802,0.002490269040118358,15
+2 samples,perception,VQA.language_metrics.CIDEr,9.079551051903298e-111,3.516495001506151e-110,15
+2 samples,perception,VQA.language_metrics.ROUGE_L,0.14023586239540567,0.006136302084558331,15
+4 samples,perception,MCQ.accuracy,0.6952380952380952,0.03269555058693309,15
+4 samples,perception,VQA.language_metrics.Bleu_1,0.10111201442399266,0.004663917719862585,15
+4 samples,perception,VQA.language_metrics.Bleu_2,0.048119885458365055,0.0034633058778103677,15
+4 samples,perception,VQA.language_metrics.Bleu_3,0.01994772741098365,0.0025823871310427684,15
+4 samples,perception,VQA.language_metrics.Bleu_4,0.0013382180755573112,0.002773971165219553,15
+4 samples,perception,VQA.language_metrics.CIDEr,5.577583199427986e-125,2.160188684347087e-124,15
+4 samples,perception,VQA.language_metrics.ROUGE_L,0.14038417354573593,0.006081986189001194,15
+MacroMixing-8MonteCarlo,perception,MCQ.accuracy,0.7142857142857143,0.0,15
+MacroMixing-8MonteCarlo,perception,VQA.language_metrics.Bleu_1,0.09983551398793271,0.00613469625158987,15
+MacroMixing-8MonteCarlo,perception,VQA.language_metrics.Bleu_2,0.04749801411318443,0.003316546128117234,15
+MacroMixing-8MonteCarlo,perception,VQA.language_metrics.Bleu_3,0.01989585638632196,0.001935347817528358,15
+MacroMixing-8MonteCarlo,perception,VQA.language_metrics.Bleu_4,0.0012902062430978183,0.002668930762790253,15
+MacroMixing-8MonteCarlo,perception,VQA.language_metrics.CIDEr,9.614841725889156e-97,3.723812188078887e-96,15
+MacroMixing-8MonteCarlo,perception,VQA.language_metrics.ROUGE_L,0.13856102357051542,0.006626795241620437,15
+MacroMixing-MonteCarlo,perception,MCQ.accuracy,0.7095238095238094,0.01844277783908294,15
+MacroMixing-MonteCarlo,perception,VQA.language_metrics.Bleu_1,0.1011408393004042,0.005039357309928538,15
+MacroMixing-MonteCarlo,perception,VQA.language_metrics.Bleu_2,0.04798788429220713,0.002952187065255013,15
+MacroMixing-MonteCarlo,perception,VQA.language_metrics.Bleu_3,0.020230789436973214,0.001541162144212533,15
+MacroMixing-MonteCarlo,perception,VQA.language_metrics.Bleu_4,0.0010144906195934187,0.002700337570393027,15
+MacroMixing-MonteCarlo,perception,VQA.language_metrics.CIDEr,1.215833899982949e-75,4.708904446388376e-75,15
+MacroMixing-MonteCarlo,perception,VQA.language_metrics.ROUGE_L,0.13906030433537697,0.005281182116626455,15
+MacroMixing-No-MonteCarlo,perception,MCQ.accuracy,0.7047619047619047,0.025133269662464167,15
+MacroMixing-No-MonteCarlo,perception,VQA.language_metrics.Bleu_1,0.10239048638833198,0.0066790644337778255,15
+MacroMixing-No-MonteCarlo,perception,VQA.language_metrics.Bleu_2,0.048635403867537265,0.00329837566789626,15
+MacroMixing-No-MonteCarlo,perception,VQA.language_metrics.Bleu_3,0.02020596701268392,0.0021618507382577964,15
+MacroMixing-No-MonteCarlo,perception,VQA.language_metrics.Bleu_4,0.0012707573713643784,0.002628837771540773,15
+MacroMixing-No-MonteCarlo,perception,VQA.language_metrics.CIDEr,1.6920788478921086e-76,6.55339319835597e-76,15
+MacroMixing-No-MonteCarlo,perception,VQA.language_metrics.ROUGE_L,0.13978615934534097,0.005867212151263534,15

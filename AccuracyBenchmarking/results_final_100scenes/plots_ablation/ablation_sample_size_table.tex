@@ -1,0 +1,24 @@
+% Requires: \usepackage{booktabs,amssymb}
+\begin{table}[t]
+\centering
+\caption{Ablation of macro mixing and Monte Carlo sample count ($N$) for Qwen2-VL-2B and Qwen3-VL-2B.}
+\label{tab:m3kd_sample_size_ablation}
+\scriptsize
+\setlength{\tabcolsep}{0.5pt}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\multicolumn{2}{c}{} & \multicolumn{2}{c}{\textbf{Qwen2-VL-2B}} & \multicolumn{2}{c}{\textbf{Qwen3-VL-2B}} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+\textbf{MacroMix} & \textbf{$N$} & \textbf{MCQ} & \textbf{ROUGE-L} & \textbf{MCQ} & \textbf{ROUGE-L} \\
+\midrule
+$\times$ & $\times$ & $0.414\pm0.087$ & $0.180\pm0.006$ & \multicolumn{2}{c}{\textit{Unstable}} \\
+$\times$ & 4 & $\mathbf{0.386\pm0.026}$ & $\mathbf{0.186\pm0.001}$ & \multicolumn{2}{c}{\textit{Unstable}} \\
+\checkmark & $\times$ & $0.371\pm0.107$ & $0.183\pm0.005$ & $0.690\pm0.000$ & $0.140\pm0.006$ \\
+\checkmark & 4 & $0.343\pm0.069$ & $0.183\pm0.005$ & $0.690\pm0.000$ & $0.139\pm0.007$ \\
+\checkmark & 8 & -- & -- & $\mathbf{0.692\pm0.003}$ & $\mathbf{0.137\pm0.008}$ \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\columnwidth}{\scriptsize \textit{Unstable} indicates that Qwen3 training without macro mixing was unstable, preventing reliable evaluation.}
+\end{table}

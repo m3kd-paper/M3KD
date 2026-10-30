@@ -1,0 +1,31 @@
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 498728.18it/s]
+PTBTokenizer tokenized 5034 tokens at 187228.46 tokens per second.
+PTBTokenizer tokenized 20065 tokens at 566371.45 tokens per second.
+Evaluation start!
+Final Scores:
+{
+    "perception": {
+        "MCQ": {
+            "accuracy": 0.6904761904761905
+        },
+        "VQA": {
+            "language_metrics": {
+                "Bleu_1": 0.10263277866422939,
+                "Bleu_2": 0.04958555177223948,
+                "Bleu_3": 0.021036283076108026,
+                "Bleu_4": 0.006331871812969698,
+                "ROUGE_L": 0.1452651383772897,
+                "CIDEr": 1.5199253407836523e-79
+            }
+        }
+    },
+    "prediction": {
+        "VQA": {}
+    },
+    "planning": {
+        "VQA": {}
+    },
+    "behavior": {
+        "MCQ": {}
+    }
+}

@@ -1,0 +1,16 @@
+model,corruption,issue,path
+plots,biterror,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/biterror.txt
+plots,bright,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/bright.txt
+plots,cameracrash,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/cameracrash.txt
+plots,colorquant,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/colorquant.txt
+plots,fog,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/fog.txt
+plots,framelost,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/framelost.txt
+plots,h256,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/h256.txt
+plots,lens,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/lens.txt
+plots,lowlight,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/lowlight.txt
+plots,motion,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/motion.txt
+plots,rain,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/rain.txt
+plots,saturate,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/saturate.txt
+plots,snow,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/snow.txt
+plots,water,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/water.txt
+plots,zoom,missing file,/root/username/MLsys_Cosmos/DriveBench/results_100/plots/zoom.txt

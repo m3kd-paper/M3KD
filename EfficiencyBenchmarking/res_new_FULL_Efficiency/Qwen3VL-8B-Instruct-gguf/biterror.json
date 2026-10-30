@@ -1,0 +1,674 @@
+[
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "818a1bd7b7394194a85163c8d95958a9",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black small sedan to the back of the ego vehicle, a black SUV to the back left of the ego vehicle, and a black small car to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.7380,0.5926>, <c2,CAM_BACK_LEFT,0.1906,0.6426>, and <c3,CAM_FRONT_LEFT,0.7547,0.5703>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290858162404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290858154799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290858170482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290858187559.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290858197405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290858178113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future driving decision-making:\n\n1.  **Other Vehicles:**\n    *   **Vehicle ahead:** In the CAM_FRONT image (bottom right), there is a dark-colored vehicle directly ahead, traveling in the same direction. Its position and motion are critical for maintaining a safe following distance.\n    *   **Vehicle on the right:** In the CAM_FRONT_RIGHT image (bottom right), a white or light-colored vehicle is visible on the right side of the road, likely in an adjacent lane or turning. This is important for lateral spacing and potential lane changes.\n\n2.  **Pedestrians / People:**\n    *   **Person on the left:** In the CAM_FRONT_LEFT image (bottom left), a person is visible on the sidewalk or near the curb. This is a critical object for ensuring pedestrian safety and avoiding collisions.\n\n3.  **Infrastructure:**\n    *   **Buildings:** Multiple buildings are visible in all images, including a large, modern building in the CAM_FRONT_RIGHT image. These define the driving environment and potential obstacles or areas of interest.\n    *   **Road and Road Markings:** The wet road surface and visible lane markings are important for understanding the road geometry and driving conditions.\n\n4.  **Environmental Conditions:**\n    *   **Weather:** The scene is clearly rainy, with wet roads and reduced visibility. This is a critical factor for adjusting speed, following distance, and overall driving behavior.\n    *   **Lighting:** The overcast sky indicates low ambient light, which may affect visibility and requires appropriate lighting.\n\nThese objects are important because they directly impact the safety and planning of the vehicle's movement. The system must continuously monitor their positions, velocities, and predicted trajectories to make safe driving decisions.",
+        "eff_preprocess_sec": 0.15035527100553736,
+        "eff_generate_sec": 104.57144531000813,
+        "eff_end_to_end_sec": 104.72180058101367,
+        "eff_generated_tokens": 370,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "818a1bd7b7394194a85163c8d95958a9",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.7380,0.5926>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "C",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290858162404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290858154799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290858170482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290858187559.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290858197405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290858178113.jpg"
+        },
+        "pred": "C. Going ahead.\n\nExplanation: In the CAM_BACK image, the object at coordinates (0.7380, 0.5926) is a vehicle positioned in the center of the road, directly ahead of the ego vehicle. The vehicle is moving forward along the road, as indicated by its position and the context of the scene (other cars ahead, wet road, etc.). There is no visual evidence of a turn (e.g., wide turn angle, lane change, or turn signal indication). Therefore, the correct answer is \"Going ahead.\"",
+        "eff_preprocess_sec": 0.21594171499600634,
+        "eff_generate_sec": 25.999193740004557,
+        "eff_end_to_end_sec": 26.215135455000564,
+        "eff_generated_tokens": 116,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "cc0114d0a58a49548f5bac6786851a08",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black car to the back of the ego vehicle, a black sedan to the front of the ego vehicle, a silver white pickup truck to the front left of the ego vehicle, a black sedan car to the front left of the ego vehicle, a black SUV to the front right of the ego vehicle, and a black sedan to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.8026,0.6222>, <c2,CAM_FRONT,0.8359,0.6167>, <c3,CAM_FRONT_LEFT,0.6120,0.6083>, <c4,CAM_FRONT_LEFT,0.8489,0.5852>, <c5,CAM_FRONT_RIGHT,0.2016,0.7249>, and <c6,CAM_FRONT_LEFT,0.2318,0.7176>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290861262404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290861254799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290861270482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290861287773.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290861297405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290861278113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future reasoning and driving decisions:\n\n1.  **Black Sedan (Front Left):** A dark-colored sedan is visible in the front-left camera view, parked or moving slowly on the street. Its position and potential motion are relevant for collision avoidance and path planning.\n\n2.  **Silver Pickup Truck (Front):** A silver pickup truck is parked or moving slowly in the front-center area, directly ahead of the vehicle. This is a critical object for maintaining safe distance and predicting its movement.\n\n3.  **Black SUV (Front Left/Center):** A black SUV is prominently visible in the front-left and center camera views. It appears to be in the adjacent lane or very close to the vehicle, making it a high-priority object for collision avoidance and lane-keeping.\n\n4.  **Trees and Vegetation (Front/Left):** Trees and other vegetation are visible along the roadside, particularly in the front-left and center views. These are important for understanding the environment, potential obstacles, and road boundaries.\n\n5.  **Building (Front Left):** A brick building is visible in the front-left camera view, indicating an urban or suburban environment. This helps in understanding the context and potential for pedestrian or vehicle activity.\n\n6.  **Road Surface (All Views):** The road surface is visible in all camera views, with some areas appearing wet or reflective. This is important for understanding traction, visibility, and potential hazards like puddles or oil.\n\n7.  **Signage (Front Right):** A sign is visible in the front-right camera view, although it is partially obscured. This is important for understanding traffic rules, road conditions, or potential hazards.\n\nThese objects are critical for the autonomous driving system to make safe and informed decisions, such as maintaining safe distances, predicting movements, and navigating the environment.",
+        "eff_preprocess_sec": 0.17673135999939404,
+        "eff_generate_sec": 92.51936469000066,
+        "eff_end_to_end_sec": 92.69609605000005,
+        "eff_generated_tokens": 389,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "08be42eb2186411d8e2201225329f1c6",
+        "frame_token": "cc0114d0a58a49548f5bac6786851a08",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.8026,0.6222>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537290861262404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537290861254799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290861270482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537290861287773.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537290861297405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537290861278113.jpg"
+        },
+        "pred": "Based on the provided images and the coordinates for object <c1,CAM_BACK,0.8026,0.6222>, here is the analysis:\n\n1.  **Image Context**: The fourth image (CAM_BACK) is heavily distorted and pixelated, making it difficult to discern fine details. However, it appears to show a wet, possibly rainy, environment with some structures and vegetation.\n2.  **Object Location**: The coordinates (0.8026, 0.6222) in the CAM_BACK view place the object towards the right side of the frame (x=0.8) and slightly below the center (y=0.62). This suggests it is likely a vehicle or object on the right side of the rear view.\n3.  **Motion Inference**: The question asks for the \"moving status\". In the context of autonomous driving, this typically refers to the direction of motion relative to the vehicle's own trajectory. The object is located on the right side of the rear view. If it were turning left, it would likely be moving towards the left side of the frame. If it were turning right, it would be moving towards the right side of the frame. If it were going ahead, it would be moving forward, likely appearing more centered or moving away from the vehicle.\n\nGiven that the object is located on the right side of the rear view, the most logical inference is that it is moving to the right relative to the vehicle's position.\n\n**Answer: B. Turn right.**",
+        "eff_preprocess_sec": 0.41756293100479525,
+        "eff_generate_sec": 83.8365740510053,
+        "eff_end_to_end_sec": 84.2541369820101,
+        "eff_generated_tokens": 319,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "64ca274b5f69458bb5d21e0e2e071902",
+        "frame_token": "e56e169f25274dc1bf12c25363ef6ddc",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the front left of the ego vehicle, a black sedan to the back of the ego vehicle, a black sedan to the front right of the ego vehicle, and a black SUV to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_LEFT,0.2292,0.3686>, <c2,CAM_BACK,0.6146,0.6417>, <c3,CAM_FRONT_RIGHT,0.5604,0.5324>, and <c4,CAM_FRONT,0.5646,0.5528>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-15-26-58-0400__CAM_FRONT__1537299514862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_LEFT__1537299514854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_RIGHT__1537299514870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-15-26-58-0400__CAM_BACK__1537299514887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-15-26-58-0400__CAM_BACK_LEFT__1537299514897414.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299514878113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future driving decision-making:\n\n1.  **Large White Semi-Truck (CAM_FRONT_LEFT):** This is a significant object due to its size and potential for obstructing the view or requiring a larger turning radius. It is moving from left to right across the frame.\n\n2.  **Dark Vehicle (CAM_FRONT):** A dark-colored car is visible in the middle of the road, ahead of the vehicle's current position. Its presence is critical for maintaining a safe distance and predicting its path.\n\n3.  **Pedestrian (CAM_FRONT_LEFT):** A person is visible near the truck, likely crossing the street or standing on the sidewalk. This is a critical object for safety, as the vehicle must be prepared to stop or slow down to avoid collision.\n\n4.  **Buildings and Infrastructure (CAM_FRONT, CAM_FRONT_LEFT, CAM_BACK):** The surrounding buildings, streetlights, and road markings are important for understanding the environment, including potential pedestrian zones, traffic signals, and road boundaries.\n\n5.  **Fence (CAM_BACK):** The fence in the background may indicate a boundary or restricted area, which could be relevant for planning the vehicle's path.\n\nThese objects are important because they directly impact the vehicle's safety and decision-making. The truck and pedestrian are particularly critical due to their potential for collision, while the buildings and infrastructure provide context for navigation and obstacle avoidance.",
+        "eff_preprocess_sec": 0.15693333800300024,
+        "eff_generate_sec": 69.11506052300683,
+        "eff_end_to_end_sec": 69.27199386100983,
+        "eff_generated_tokens": 302,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "64ca274b5f69458bb5d21e0e2e071902",
+        "frame_token": "e56e169f25274dc1bf12c25363ef6ddc",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT_LEFT,0.2292,0.3686>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Turn right.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-15-26-58-0400__CAM_FRONT__1537299514862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_LEFT__1537299514854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_FRONT_RIGHT__1537299514870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-15-26-58-0400__CAM_BACK__1537299514887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-15-26-58-0400__CAM_BACK_LEFT__1537299514897414.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299514878113.jpg"
+        },
+        "pred": "The object at coordinates (0.2292, 0.3686) in the CAM_FRONT_LEFT image is a large white truck. In the image, the truck is positioned on the road and appears to be moving forward, as it is aligned with the direction of travel and is not visibly turning.\n\nTherefore, the correct answer is: **A. Going ahead.**",
+        "eff_preprocess_sec": 0.17530274600721896,
+        "eff_generate_sec": 18.91073884400248,
+        "eff_end_to_end_sec": 19.0860415900097,
+        "eff_generated_tokens": 80,
+        "eff_input_tokens": 487
+    },
+    {
+        "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+        "frame_token": "f589ce80644d46c0ab3c6e764321d5ef",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a blue and white car to the front of the ego vehicle, a blue truck to the back of the ego vehicle, a white commercial vehicle to the front right of the ego vehicle, a pedestrian holding a black umbrella to the front left of the ego vehicle, a traffic light with green light on to the front of the ego vehicle, and a traffic light with green light on to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.5792,0.6213>, <c2,CAM_BACK,0.4125,0.5231>, <c3,CAM_FRONT_RIGHT,0.4349,0.7661>, <c4,CAM_FRONT_LEFT,0.6239,0.5991>, <c5,CAM_FRONT,0.6933,0.4310>, and <c6,CAM_FRONT,0.4500,0.4412>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402419012460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402419004844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_RIGHT__1532402419020339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-13-19+0800__CAM_BACK__1532402419037525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-13-19+0800__CAM_BACK_LEFT__1532402419047423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_BACK_RIGHT__1532402419027893.jpg"
+        },
+        "pred": "Based on the provided camera images, here are the important objects in the current scene that should be considered for future driving decision-making:\n\n1.  **White Minivan (CAM_FRONT_LEFT):** This vehicle is directly in front of the ego vehicle, occupying the left lane. It is a primary object of interest for collision avoidance and lane-keeping decisions.\n\n2.  **Black Car (CAM_FRONT_LEFT):** Located to the right of the white minivan, this car is also in the same traffic lane. Its position and potential movement are relevant for maintaining safe spacing.\n\n3.  **Traffic Lights (CAM_FRONT):** The traffic lights are visible ahead. The state of these lights (e.g., red, green, yellow) is critical for determining whether to stop, proceed, or prepare to stop.\n\n4.  **Pedestrians (CAM_FRONT_LEFT):** There are pedestrians visible on the sidewalk near the black car. Their presence necessitates caution and awareness of potential crossing behavior.\n\n5.  **Buildings and Road Infrastructure (CAM_FRONT, CAM_BACK):** The surrounding buildings and road markings (e.g., lane lines, road edges) provide context for the driving environment, including potential obstacles and navigation paths.\n\nThese objects are critical for safe driving decisions, as they directly impact the ego vehicle's trajectory, speed, and required actions (e.g., braking, accelerating, changing lanes).",
+        "eff_preprocess_sec": 0.2492322210018756,
+        "eff_generate_sec": 86.94511749500816,
+        "eff_end_to_end_sec": 87.19434971601004,
+        "eff_generated_tokens": 283,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+        "frame_token": "f589ce80644d46c0ab3c6e764321d5ef",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.5792,0.6213>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402419012460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402419004844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_RIGHT__1532402419020339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-13-19+0800__CAM_BACK__1532402419037525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-13-19+0800__CAM_BACK_LEFT__1532402419047423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-13-19+0800__CAM_BACK_RIGHT__1532402419027893.jpg"
+        },
+        "pred": "B. Going ahead.\n\nExplanation: The object at coordinates (0.5792, 0.6213) in the CAM_FRONT image is a vehicle positioned in the center of the road, directly ahead of the ego vehicle. It is aligned with the forward direction of travel and is not positioned near any lane markings or road edges that would suggest a turn. The vehicle appears to be moving straight ahead in the flow of traffic, consistent with \"Going ahead.\"",
+        "eff_preprocess_sec": 0.18437923899909947,
+        "eff_generate_sec": 20.036190115002682,
+        "eff_end_to_end_sec": 20.220569354001782,
+        "eff_generated_tokens": 97,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "df8dfada99a04a81bd1b102eeb84e9bc",
+        "frame_token": "e3f986e5d53f416492bdf255e82bff52",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black car to the front of the ego vehicle, a person riding a bicycle to the front of the ego vehicle, a person wearing a pink shirt and black pants to the front of the ego vehicle, a white SUV to the front right of the ego vehicle, a black sedan to the back right of the ego vehicle, and a black sedan to the back of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.6604,0.6314>, <c2,CAM_FRONT,0.2052,0.6092>, <c3,CAM_FRONT,0.0203,0.5991>, <c4,CAM_FRONT_RIGHT,0.4313,0.6758>, <c5,CAM_BACK_RIGHT,0.2409,0.7426>, and <c6,CAM_BACK,0.1351,0.6314>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535574095912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535574095904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535574095920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535574095937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535574095947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535574095928113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that will be considered for future reasoning and driving decisions:\n\n1.  **Vehicle (CAM_FRONT):** A dark-colored car is visible in the front, positioned near a crosswalk. This is a primary object of interest as it is in the immediate driving environment.\n2.  **Pedestrians (CAM_FRONT):** Several pedestrians are visible on the left side of the road, near the crosswalk and a large white tent structure. Their presence is critical for safe driving decisions.\n3.  **Large White Tent Structure (CAM_FRONT):** A large, arched white tent or canopy is prominent in the foreground. This structure is a significant landmark and may indicate an event or construction zone.\n4.  **Orange Construction Barriers (CAM_FRONT & CAM_FRONT_LEFT):** Orange barriers are visible on the left side of the road, suggesting a construction or work zone. This is important for route planning and speed adjustment.\n5.  **Buildings (CAM_FRONT_RIGHT & CAM_BACK):** Various buildings are visible in the background, including a tall building on the right and a multi-story building in the distance. These help establish the urban environment.\n6.  **Crosswalk (CAM_FRONT):** The crosswalk is clearly visible, indicating a pedestrian crossing area. This is a critical element for safe navigation.\n\nThese objects are important because they directly impact the driving environment, requiring the system to plan for potential interactions (e.g., yielding to pedestrians, adjusting speed near construction, navigating around the tent structure).",
+        "eff_preprocess_sec": 0.24113601699355058,
+        "eff_generate_sec": 72.64858177900896,
+        "eff_end_to_end_sec": 72.88971779600251,
+        "eff_generated_tokens": 320,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "df8dfada99a04a81bd1b102eeb84e9bc",
+        "frame_token": "e3f986e5d53f416492bdf255e82bff52",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.6604,0.6314>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535574095912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535574095904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535574095920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535574095937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535574095947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535574095928113.jpg"
+        },
+        "pred": "B. Going ahead.\n\nExplanation: The object at coordinates (0.6604, 0.6314) in the CAM_FRONT image is a dark-colored car positioned in the center of the road, directly ahead of the vehicle from which the image is captured. It is not positioned near any lane markings or road edges that would indicate a turn. The car appears to be moving straight through the intersection, consistent with \"Going ahead.\" There is no visual evidence to suggest it is turning left or right.",
+        "eff_preprocess_sec": 0.18716136600414757,
+        "eff_generate_sec": 23.947893329997896,
+        "eff_end_to_end_sec": 24.135054696002044,
+        "eff_generated_tokens": 106,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "dcdea563c77544bb887de11d87619d3c",
+        "frame_token": "0f6432a5c6824bed9cd2603e00e5f61e",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a gray car to the front right of the ego vehicle, a white truck to the front of the ego vehicle, a red car to the front of the ego vehicle, a white truck to the back of the ego vehicle, and a white truck to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_RIGHT,0.4151,0.5703>, <c2,CAM_FRONT,0.7714,0.4908>, <c3,CAM_FRONT,0.8896,0.5870>, <c4,CAM_BACK,0.2874,0.5519>, and <c5,CAM_FRONT_LEFT,0.4239,0.4528>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297503412404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297503404799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297503420482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297503437558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297503447405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297503428113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that will be considered for future reasoning and driving decisions:\n\n1.  **White Truck (CAM_FRONT_RIGHT):** A large white truck is visible in the front right, appearing to be turning or navigating the intersection. Its size and position make it a critical object for collision avoidance and path planning.\n\n2.  **Red Car (CAM_FRONT_RIGHT):** A red car is located behind the white truck, also in the front right area. It is likely following the truck or preparing to enter the intersection.\n\n3.  **Black Car (CAM_FRONT):** A black car is visible in the front, driving on the road ahead. It is a primary object for maintaining safe following distance and predicting its trajectory.\n\n4.  **White Van (CAM_FRONT):** A white van is also visible in the front, to the left of the black car. It is another important object for collision avoidance and path planning.\n\n5.  **Pedestrians (CAM_FRONT_LEFT):** Pedestrians are visible on the sidewalk in the front left. Their presence is critical for ensuring safe driving, especially if they are crossing the street or near the curb.\n\n6.  **Buildings and Infrastructure:** The tall buildings and street infrastructure (like the traffic light pole) are important for understanding the environment, including potential obstacles and road layout.\n\nThese objects are critical for the autonomous vehicle to make safe and informed driving decisions, such as adjusting speed, changing lanes, or stopping.",
+        "eff_preprocess_sec": 0.1685931739921216,
+        "eff_generate_sec": 73.63484627699654,
+        "eff_end_to_end_sec": 73.80343945098866,
+        "eff_generated_tokens": 309,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "dcdea563c77544bb887de11d87619d3c",
+        "frame_token": "0f6432a5c6824bed9cd2603e00e5f61e",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c4,CAM_BACK,0.2874,0.5519>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297503412404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297503404799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_RIGHT__1537297503420482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-54-39-0400__CAM_BACK__1537297503437558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-54-39-0400__CAM_BACK_LEFT__1537297503447405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-54-39-0400__CAM_BACK_RIGHT__1537297503428113.jpg"
+        },
+        "pred": "A. Going ahead.\n\nExplanation: In the CAM_BACK image, the object at coordinates (0.2874, 0.5519) is a dark-colored vehicle (likely a sedan) positioned in the lane ahead of the ego vehicle. The vehicle is oriented straight ahead, and its position relative to the lane markings and surrounding environment indicates it is moving forward in a straight line, not turning. The wet road surface and overcast conditions are consistent with the scene, but do not affect the object's motion direction. Therefore, the correct answer is \"Going ahead.\"",
+        "eff_preprocess_sec": 0.2084039970068261,
+        "eff_generate_sec": 39.21682021999732,
+        "eff_end_to_end_sec": 39.42522421700414,
+        "eff_generated_tokens": 119,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "97349fd50e694a5f994b0954047b96d0",
+        "frame_token": "c42bcde31f894f28bdaa7994f8a03a34",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a black SUV to the back of the ego vehicle, a black unknown to the front left of the ego vehicle, a gray SUV to the back left of the ego vehicle, and an orange roadblock to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.7864,0.5759>, <c2,CAM_FRONT_LEFT,0.5500,0.5287>, <c3,CAM_BACK_LEFT,0.6630,0.7074>, and <c4,CAM_BACK,0.2224,0.7056>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385270612410.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385270604799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385270620482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385270637558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385270647405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385270628113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future driving decision-making:\n\n1.  **Black SUV (CAM_BACK):** This is a prominent vehicle directly ahead in the scene. Its position and potential movement are critical for safe driving. It appears to be parked or moving slowly in a lot or driveway.\n\n2.  **White Van (CAM_FRONT):** This vehicle is visible in the distance on the left side of the road. It is another important object to monitor for potential interaction or traffic flow.\n\n3.  **Construction Barriers and Fencing (CAM_FRONT_LEFT, CAM_FRONT_RIGHT, CAM_BACK):** The metal barriers and fencing are significant environmental features. They define the boundaries of the road or work zone and may indicate restricted areas or potential hazards. The presence of orange traffic cones (CAM_BACK) further suggests a construction or work zone.\n\n4.  **Buildings and Infrastructure (CAM_FRONT, CAM_BACK):** The buildings in the background provide context for the environment and may indicate potential pedestrian areas or other traffic.\n\nThese objects are important because they directly impact the driving environment, potential collision risks, and necessary maneuvers for safe navigation. The driver must consider the positions, movements, and potential actions of these objects when making future driving decisions.",
+        "eff_preprocess_sec": 0.16938639200816397,
+        "eff_generate_sec": 60.43410392700753,
+        "eff_end_to_end_sec": 60.60349031901569,
+        "eff_generated_tokens": 263,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "97349fd50e694a5f994b0954047b96d0",
+        "frame_token": "c42bcde31f894f28bdaa7994f8a03a34",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.7864,0.5759>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385270612410.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385270604799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385270620482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385270637558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385270647405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385270628113.jpg"
+        },
+        "pred": "C. Going ahead.\n\nExplanation: The object at coordinates (0.7864, 0.5759) in the CAM_BACK image is a dark-colored vehicle parked or stationary in the background. It is not positioned to turn left or right, nor is it moving forward relative to the vehicle's orientation. The object appears to be parked or stationary, consistent with \"Going ahead\" being the most appropriate choice among the given options, as it implies the vehicle is moving forward in its current direction (which is not a turn).",
+        "eff_preprocess_sec": 0.17492734899860807,
+        "eff_generate_sec": 25.2394681309961,
+        "eff_end_to_end_sec": 25.41439547999471,
+        "eff_generated_tokens": 111,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "4a4d09496d594c7385a1ec227bdb3a7f",
+        "frame_token": "d885687979384c1eb6bf37a5a0b8d9c3",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white sedan car to the back of the ego vehicle, a white sedan to the front of the ego vehicle, a black SUV to the back of the ego vehicle, and a red and white truck to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.6031,0.5463>, <c2,CAM_FRONT,0.8245,0.5491>, <c3,CAM_BACK,0.2396,0.5398>, and <c4,CAM_FRONT,0.4468,0.5158>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289816662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537289816654811.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537289816670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537289816689759.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289816697405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537289816678113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that should be considered for future driving decisions:\n\n1.  **Other Vehicles:**\n    *   **Truck:** A large semi-truck is visible in the front-left and front-right views, occupying a significant portion of the road. Its size and position are critical for safe maneuvering.\n    *   **Cars:** Several cars are visible in the distance ahead, particularly in the front view. Their positions and potential movements need to be monitored.\n    *   **Motorcycle:** A motorcycle is visible in the front-left view, approaching an intersection. This is a smaller, faster-moving vehicle that requires special attention.\n\n2.  **Infrastructure:**\n    *   **Traffic Lights:** Traffic lights are visible in the front view, indicating an upcoming intersection. The current state (red, yellow, or green) is crucial for decision-making.\n    *   **Road Markings:** Lane markings are visible, helping to define the driving path.\n    *   **Buildings and Sidewalks:** Buildings and sidewalks are visible on both sides of the road, providing context for the environment.\n\n3.  **Environmental Factors:**\n    *   **Weather Conditions:** The scene is wet, indicating recent or ongoing rain. This affects traction and visibility, requiring cautious driving.\n    *   **Visibility:** The weather and potential rain may reduce visibility, making it harder to see distant objects clearly.\n\nThese objects are important because they directly impact the driving environment and require careful planning and decision-making to ensure safety. The truck, motorcycle, and traffic lights are particularly critical for immediate actions.",
+        "eff_preprocess_sec": 0.14087141799973324,
+        "eff_generate_sec": 77.28808400600974,
+        "eff_end_to_end_sec": 77.42895542400947,
+        "eff_generated_tokens": 332,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "4a4d09496d594c7385a1ec227bdb3a7f",
+        "frame_token": "d885687979384c1eb6bf37a5a0b8d9c3",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c3,CAM_BACK,0.2396,0.5398>? Please select the correct answer from the following options: A. Turn left. B. Going ahead. C. Turn right.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289816662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537289816654811.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537289816670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537289816689759.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289816697405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537289816678113.jpg"
+        },
+        "pred": "B. Going ahead.\n\nExplanation: In the CAM_BACK image, the object at coordinates (0.2396, 0.5398) is a vehicle positioned in the lane directly behind the ego vehicle. The vehicle is aligned with the road's direction and appears to be moving forward in the same direction as the ego vehicle, consistent with \"Going ahead.\" There are no visual cues (like a turn signal or angled position relative to the road) to suggest it is turning left or right.",
+        "eff_preprocess_sec": 0.16901159500412177,
+        "eff_generate_sec": 38.01319401699584,
+        "eff_end_to_end_sec": 38.18220561199996,
+        "eff_generated_tokens": 104,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "5c76a3728b8b4d02ae20bd69fb928aa1",
+        "frame_token": "abfad6a00c194660abc85b9a1f215190",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the back of the ego vehicle, a white truck to the front right of the ego vehicle, a pedestrian wearing gray clothes to the back right of the ego vehicle, a white truck to the back of the ego vehicle, a black sedan car to the front of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.4286,0.5528>, <c2,CAM_FRONT_RIGHT,0.5984,0.4926>, <c3,CAM_BACK_RIGHT,0.7542,0.6436>, <c4,CAM_BACK,0.2729,0.5574>, <c5,CAM_FRONT,0.2068,0.5898>, and <c6,CAM_FRONT,0.6416,0.2276>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537290306912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537290306904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537290306920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537290306937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537290306947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537290306928113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future reasoning and driving decisions:\n\n1.  **Other Vehicles:**\n    *   **Front:** A vehicle is visible in the front-left lane, appearing to be turning or moving into the intersection. Its headlights are on, indicating it's active.\n    *   **Crosswalk/Intersection:** Multiple vehicles are visible in the intersection, including cars waiting at the crosswalk and others moving through. This indicates a complex traffic environment.\n    *   **Right Lane:** A vehicle is visible in the front-right lane, moving forward.\n\n2.  **Pedestrians:**\n    *   **Crosswalk:** Pedestrians are visible crossing the street in the crosswalk. Their presence is critical for safe driving decisions, especially regarding stopping or yielding.\n\n3.  **Traffic Signals:**\n    *   **Traffic Light:** A traffic light is visible at the intersection. It appears to be green, indicating that traffic should proceed. However, the presence of pedestrians and other vehicles requires careful observation.\n\n4.  **Infrastructure:**\n    *   **Buildings:** Tall buildings are visible in the background, indicating an urban environment.\n    *   **Construction Cranes:** Construction cranes are visible in the background, suggesting ongoing construction and potential hazards or changes in the environment.\n\n5.  **Weather Conditions:**\n    *   **Rain:** The scene is wet, with visible raindrops on the camera lens. This affects visibility and road conditions, requiring adjustments to speed and braking distance.\n\nThese objects are critical for safe driving decisions, as they represent potential obstacles, required actions (e.g., stopping for pedestrians), and environmental conditions that affect vehicle control.",
+        "eff_preprocess_sec": 0.21335702600481454,
+        "eff_generate_sec": 82.27148286701413,
+        "eff_end_to_end_sec": 82.48483989301894,
+        "eff_generated_tokens": 352,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "5c76a3728b8b4d02ae20bd69fb928aa1",
+        "frame_token": "abfad6a00c194660abc85b9a1f215190",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.4286,0.5528>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537290306912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_LEFT__1537290306904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_FRONT_RIGHT__1537290306920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-12-53-31-0400__CAM_BACK__1537290306937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537290306947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-12-53-31-0400__CAM_BACK_RIGHT__1537290306928113.jpg"
+        },
+        "pred": "C. Going ahead.\n\nExplanation: The object at coordinates (0.4286, 0.5528) in the CAM_BACK image is located in the center of the frame, which typically corresponds to the vehicle's direct rearward view. In this context, the object appears to be a vehicle or structure directly behind the ego vehicle, moving in the same direction (i.e., going ahead). There are no visual cues (like lane markings or road curvature) to suggest a turn, and the object is not positioned to the left or right side of the frame to indicate a turn. Therefore, the most logical inference is that the object is going ahead.",
+        "eff_preprocess_sec": 0.2449881170032313,
+        "eff_generate_sec": 32.117452443999355,
+        "eff_end_to_end_sec": 32.362440561002586,
+        "eff_generated_tokens": 137,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "62ac9e73d0eb4c7a9b537384270efb2f",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a silver pickup truck to the back of the ego vehicle, a black SUV to the front left of the ego vehicle, a blue and white checkered clothes pedestrians to the front right of the ego vehicle, and a red light to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.4078,0.6083>, <c2,CAM_FRONT_LEFT,0.5547,0.7917>, <c3,CAM_FRONT_RIGHT,0.5094,0.6111>, and <c4,CAM_BACK,0.6889,0.3447>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867373862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867373854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867373870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867373887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867373897405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867373878113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future reasoning and driving decisions:\n\n1.  **Pedestrian (CAM_FRONT_LEFT):** A person is standing on the sidewalk next to a lamppost. This is a critical object as pedestrians are a primary concern for autonomous driving systems. Their position and potential movement must be predicted.\n\n2.  **Vehicle (CAM_FRONT):** A dark-colored SUV is in the foreground, likely in the same lane or adjacent lane. This is a primary object for collision avoidance and trajectory planning.\n\n3.  **Other Vehicle (CAM_FRONT):** Another vehicle is visible behind the SUV, indicating traffic flow and potential interactions.\n\n4.  **Infrastructure (CAM_FRONT_LEFT & CAM_FRONT):** The scene includes a bridge with railings, lampposts, and buildings in the background. These are important for understanding the environment, potential obstacles, and road boundaries.\n\n5.  **Traffic Sign (CAM_FRONT_LEFT):** A traffic sign is visible, which is crucial for understanding traffic rules and regulations.\n\nThese objects are important because they directly impact the safety and decision-making of the autonomous vehicle. The system must predict the movements of the pedestrian and other vehicles, and navigate safely around the infrastructure.",
+        "eff_preprocess_sec": 0.15253965600277297,
+        "eff_generate_sec": 60.519349132999196,
+        "eff_end_to_end_sec": 60.67188878900197,
+        "eff_generated_tokens": 260,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "62ac9e73d0eb4c7a9b537384270efb2f",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.4078,0.6083>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867373862404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867373854799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867373870482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867373887558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867373897405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867373878113.jpg"
+        },
+        "pred": "The object at <c1,CAM_BACK,0.4078,0.6083> is located in the back camera view, at coordinates approximately 40% from the left and 61% from the top.\n\nLooking at the CAM_BACK image (the fourth image), we can see a distorted, vertical view of buildings and structures. The object in question is positioned near the center of the frame, but due to the perspective and distortion, it's difficult to determine its exact motion.\n\nHowever, the context of the scene (a bridge with cars and pedestrians) and the object's position suggest it is likely part of the background infrastructure (like a building or sign) rather than a moving vehicle or pedestrian.\n\nGiven the lack of clear motion cues and the object's static appearance in the background, the most reasonable inference is that it is **not** moving.\n\nBut since the question asks for a choice among \"Turn right,\" \"Turn left,\" or \"Going ahead,\" and none of these options accurately describe a static background object, we must choose the option that best fits the context.\n\nIn the CAM_BACK view, the object is positioned in the center, and if we assume it's a vehicle (which is unlikely given the context), \"Going ahead\" would be the most neutral option.\n\nHowever, the object is not a vehicle, and it's not moving.\n\nGiven the constraints, the best answer is:\n\n**C. Going ahead.**\n\nThis is because \"Going ahead\" is the least incorrect option among the three, as it implies forward motion, which is the most likely direction for any object in the background relative to the camera's perspective.\n\n**Final Answer: C. Going ahead.**",
+        "eff_preprocess_sec": 0.15671964100329205,
+        "eff_generate_sec": 91.54824210600054,
+        "eff_end_to_end_sec": 91.70496174700384,
+        "eff_generated_tokens": 348,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "36b6aa58462449b1b9285954cede8f22",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a silver truck to the back of the ego vehicle, a black sedan to the front of the ego vehicle, and a woman wearing blue jeans to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.3783,0.5889>, <c2,CAM_FRONT,0.3901,0.6991>, and <c3,CAM_FRONT_RIGHT,0.4562,0.7824>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867371912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867371904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867371920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867371937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867371947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867371928113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future reasoning and driving decisions:\n\n1.  **Large White Truck (CAM_FRONT):** This is the most prominent object in the front view. It is a large, white truck, likely a dump truck or similar heavy vehicle, positioned on the road ahead. Its size and position make it a critical object for collision avoidance and trajectory planning.\n\n2.  **Pedestrians (CAM_FRONT):** There are numerous pedestrians visible on the road surface in front of the vehicle. Their presence necessitates a cautious driving approach, as they may cross or move unpredictably.\n\n3.  **Buildings and Infrastructure (CAM_FRONT, CAM_BACK):** The scene includes various buildings, including a red-brick building and a large metal structure (possibly a bridge or gantry) in the background. These are static environmental features that define the driving context and potential obstacles.\n\n4.  **Road Surface (CAM_FRONT, CAM_BACK):** The road itself is a key element, with visible lane markings and pedestrian crossings. The road surface is where all driving actions occur and where potential hazards (like pedestrians) are located.\n\n5.  **Other Vehicles (CAM_FRONT_LEFT, CAM_FRONT_RIGHT):** While the images are low-resolution, there appear to be other vehicles in the periphery. These are important for understanding traffic flow and potential interactions.\n\nThese objects are critical for the autonomous driving system to perceive, predict, and plan safe maneuvers. The system must account for the large truck's potential path, the movement of pedestrians, and the overall traffic environment defined by the road and surrounding infrastructure.",
+        "eff_preprocess_sec": 0.16065480999532156,
+        "eff_generate_sec": 76.66949976299657,
+        "eff_end_to_end_sec": 76.83015457299189,
+        "eff_generated_tokens": 337,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "892ed06c432448fe87ecb5d31756f14a",
+        "frame_token": "36b6aa58462449b1b9285954cede8f22",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.3783,0.5889>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-21-11-53-44-0400__CAM_FRONT__1534867371912404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_LEFT__1534867371904799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867371920482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-21-11-53-44-0400__CAM_BACK__1534867371937558.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-21-11-53-44-0400__CAM_BACK_LEFT__1534867371947405.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_BACK_RIGHT__1534867371928113.jpg"
+        },
+        "pred": "Based on the provided image and the coordinates (0.3783, 0.5889) in the CAM_BACK camera view, the object appears to be a large truck or construction vehicle positioned near the center of the road. The vehicle is oriented in a way that suggests it is moving forward along the road, not turning.\n\nTherefore, the correct answer is:\n**B. Going ahead.**\n\nExplanation: The object is located in the middle of the road in the CAM_BACK view, and its orientation and position relative to the road markings and surrounding environment indicate forward motion, not a turn.",
+        "eff_preprocess_sec": 0.19346773299912456,
+        "eff_generate_sec": 27.16523586900439,
+        "eff_end_to_end_sec": 27.358703602003516,
+        "eff_generated_tokens": 124,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "212fd4c9c9174635a7ec76051c8eec9e",
+        "frame_token": "f694bb78aa7c47b98e6bd2ad1b2329f0",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a red car to the back right of the ego vehicle, a person riding a black motorcycle to the back left of the ego vehicle, a white truck to the back left of the ego vehicle, and a white sedan to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK_RIGHT,0.8854,0.5806>, <c2,CAM_BACK_LEFT,0.1021,0.6861>, <c3,CAM_BACK_LEFT,0.7464,0.5047>, and <c4,CAM_FRONT_RIGHT,0.2667,0.5547>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986223262460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_LEFT__1538986223254844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986223270356.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-16-03-24+0800__CAM_BACK__1538986223287525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-16-03-24+0800__CAM_BACK_LEFT__1538986223297423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_BACK_RIGHT__1538986223277893.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future driving decision-making:\n\n1.  **Other Vehicles:**\n    *   A white car is visible in the distance on the road ahead (in the CAM_FRONT image).\n    *   A dark-colored vehicle (possibly a motorcycle or scooter) is visible on the left side of the road, near the crosswalk (in the CAM_FRONT_LEFT image).\n\n2.  **Road Infrastructure:**\n    *   **Road:** The paved road with visible lane markings.\n    *   **Crosswalk:** A marked pedestrian crossing is visible in the foreground (CAM_FRONT_LEFT).\n    *   **Traffic Sign:** A traffic sign is visible on the right side of the road (CAM_FRONT).\n    *   **Curbs and Road Markings:** The road has curbs and painted lines, including a white arrow indicating a turn or lane direction.\n\n3.  **Environmental Features:**\n    *   **Buildings:** A large modern building with glass windows is on the right side of the road (CAM_FRONT).\n    *   **Vegetation:** Trees and bushes are present along the road and in the background.\n    *   **Fence/Barrier:** A low fence or barrier is visible along the edge of the road (CAM_FRONT_LEFT).\n\nThese objects are critical for the autonomous vehicle's perception, prediction, and planning systems to ensure safe navigation and avoid collisions. The vehicle must anticipate the movements of the other vehicles and respect the road markings and traffic signs.",
+        "eff_preprocess_sec": 0.5274367649981286,
+        "eff_generate_sec": 84.84470627800329,
+        "eff_end_to_end_sec": 85.37214304300142,
+        "eff_generated_tokens": 314,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "212fd4c9c9174635a7ec76051c8eec9e",
+        "frame_token": "f694bb78aa7c47b98e6bd2ad1b2329f0",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK_RIGHT,0.8854,0.5806>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Turn left.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986223262460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_LEFT__1538986223254844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986223270356.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-16-03-24+0800__CAM_BACK__1538986223287525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-16-03-24+0800__CAM_BACK_LEFT__1538986223297423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_BACK_RIGHT__1538986223277893.jpg"
+        },
+        "pred": "The object at <c1,CAM_BACK_RIGHT,0.8854,0.5806> is located in the back right camera view, near the bottom right of the frame. In the provided image, this area shows a road with a white car ahead and a roundabout or curve to the left. The object is positioned on the right side of the road, which suggests it is likely moving in a rightward direction.\n\nHowever, since the object is in the back right camera, and the road ahead appears to curve left, the object is likely following the curve or preparing to turn left. But the coordinates (0.8854, 0.5806) indicate it is near the bottom right, which is typically the right side of the road.\n\nGiven the context, the most likely motion is that the object is turning left to follow the curve in the road.\n\n**Answer: C. Turn left.**\n\nExplanation: The object is located in the back right camera view, near the bottom right of the frame. The road ahead curves to the left, and the object is positioned on the right side of the road, which suggests it is likely turning left to follow the curve. The coordinates (0.8854, 0.5806) indicate it is near the bottom right, which is consistent with a vehicle turning left to navigate the curve.",
+        "eff_preprocess_sec": 0.21896860998822376,
+        "eff_generate_sec": 60.368488551001064,
+        "eff_end_to_end_sec": 60.58745716098929,
+        "eff_generated_tokens": 288,
+        "eff_input_tokens": 487
+    },
+    {
+        "scene_token": "6207269cb9474c14b01f9610b2ee30aa",
+        "frame_token": "c42eec2e6901462ca66b926d1154cc44",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the back of the ego vehicle, a white sedan to the front left of the ego vehicle, a brown car to the back of the ego vehicle, and a white sedan to the back left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,0.5344,0.5009>, <c2,CAM_FRONT_LEFT,0.6552,0.5703>, <c3,CAM_BACK,0.9366,0.5776>, and <c4,CAM_BACK_LEFT,0.6458,0.6056>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-06-15-06-32-0400__CAM_FRONT__1533582489662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_LEFT__1533582489654799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_RIGHT__1533582489670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-06-15-06-32-0400__CAM_BACK__1533582489687563.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-06-15-06-32-0400__CAM_BACK_LEFT__1533582489697408.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_BACK_RIGHT__1533582489678113.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that would be considered for future driving decision-making:\n\n1.  **Crosswalk (CAM_FRONT):** This is a critical object as it indicates a pedestrian crossing area. The vehicle must be prepared to stop or slow down if pedestrians are present or may appear.\n\n2.  **Building (CAM_FRONT):** The large, multi-story building with a parking structure is a significant static object. It defines the environment and potential obstacles or areas of interest.\n\n3.  **Pedestrian Sign/Marker (CAM_FRONT):** The blue and white sign near the crosswalk is important for understanding traffic rules and potential pedestrian activity.\n\n4.  **Trees (CAM_FRONT_LEFT, CAM_FRONT):** Trees are common environmental features, but they can also indicate areas where pedestrians might be walking or where visibility might be reduced.\n\n5.  **Road Markings (CAM_FRONT, CAM_BACK):** The road markings, including the crosswalk and lane lines, are essential for understanding the road layout and required driving maneuvers.\n\n6.  **Other Vehicles (CAM_BACK):** The vehicles visible in the distance on the road ahead are important for predicting traffic flow and potential interactions.\n\n7.  **Fence/Barrier (CAM_FRONT_LEFT):** The fence or barrier on the left side of the road may indicate a boundary or restricted area.\n\nThese objects are important because they provide context for the driving environment, help predict potential hazards (like pedestrians or other vehicles), and inform necessary driving actions (like stopping at a crosswalk or adjusting speed for traffic).",
+        "eff_preprocess_sec": 0.1899790340103209,
+        "eff_generate_sec": 72.95442538600764,
+        "eff_end_to_end_sec": 73.14440442001796,
+        "eff_generated_tokens": 324,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "6207269cb9474c14b01f9610b2ee30aa",
+        "frame_token": "c42eec2e6901462ca66b926d1154cc44",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_BACK,0.5344,0.5009>? Please select the correct answer from the following options: A. Turn right. B. Turn left. C. Going ahead.",
+        "answer": "A",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-06-15-06-32-0400__CAM_FRONT__1533582489662404.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_LEFT__1533582489654799.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_FRONT_RIGHT__1533582489670482.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-08-06-15-06-32-0400__CAM_BACK__1533582489687563.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-06-15-06-32-0400__CAM_BACK_LEFT__1533582489697408.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-06-15-06-32-0400__CAM_BACK_RIGHT__1533582489678113.jpg"
+        },
+        "pred": "C. Going ahead.\n\nExplanation: The object at coordinates (0.5344, 0.5009) in the CAM_BACK image is located in the center of the road, ahead of the vehicle. The road ahead is straight, and there are no visible signs or markings indicating a turn. The object appears to be moving forward along the road, consistent with \"Going ahead.\"",
+        "eff_preprocess_sec": 0.3509885219973512,
+        "eff_generate_sec": 17.461492155998712,
+        "eff_end_to_end_sec": 17.812480677996064,
+        "eff_generated_tokens": 82,
+        "eff_input_tokens": 486
+    },
+    {
+        "scene_token": "c0d3796765e2452d990309b2568adac5",
+        "frame_token": "464a82c88b4a420a9639cca247918a7c",
+        "question_type": "perception",
+        "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "answer": "There is a white truck to the front of the ego vehicle, a person wearing yellow clothes to the back of the ego vehicle, a gray SUV to the back of the ego vehicle, and a person wearing yellow clothes to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,0.2432,0.4972>, <c2,CAM_BACK,0.8771,0.6000>, <c3,CAM_BACK,0.5734,0.6278>, and <c4,CAM_FRONT_RIGHT,0.3901,0.6241>.",
+        "tag": [
+            2
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115172412460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_LEFT__1533115172404844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_RIGHT__1533115172420339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115172437525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-01-17-13-57+0800__CAM_BACK_LEFT__1533115172447423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_BACK_RIGHT__1533115172427893.jpg"
+        },
+        "pred": "Based on the provided images, here are the important objects in the current scene that will be considered for future reasoning and driving decisions:\n\n1.  **Excavator (CAM_FRONT_LEFT):** A large orange excavator is prominently visible on the left side of the road, actively working. This is a significant obstacle that requires careful maneuvering around.\n2.  **Black Car (CAM_FRONT):** A black car is directly ahead in the lane, approaching the intersection. Its position and speed are critical for safe driving decisions.\n3.  **Construction Barriers (CAM_FRONT, CAM_BACK):** Orange construction barriers are placed along the road, indicating a work zone. These barriers define the boundaries of the drivable area and may need to be navigated around.\n4.  **Pedestrian (CAM_BACK):** A person is visible on the right side of the road, near the barriers. This pedestrian must be accounted for in the driving plan to ensure safety.\n5.  **Traffic Light (CAM_FRONT):** A traffic light is visible at the intersection. Its current state (red, yellow, or green) will be a key factor in determining when to proceed or stop.\n\nThese objects are crucial for the autonomous driving system to perceive, predict, and plan safe actions for the vehicle.",
+        "eff_preprocess_sec": 0.1320092929963721,
+        "eff_generate_sec": 78.36455074700643,
+        "eff_end_to_end_sec": 78.4965600400028,
+        "eff_generated_tokens": 263,
+        "eff_input_tokens": 456
+    },
+    {
+        "scene_token": "c0d3796765e2452d990309b2568adac5",
+        "frame_token": "464a82c88b4a420a9639cca247918a7c",
+        "question_type": "perception",
+        "question": "What is the moving status of object <c1,CAM_FRONT,0.2432,0.4972>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left.",
+        "answer": "B",
+        "tag": [
+            0
+        ],
+        "image_path": {
+            "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115172412460.jpg",
+            "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_LEFT__1533115172404844.jpg",
+            "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_FRONT_RIGHT__1533115172420339.jpg",
+            "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115172437525.jpg",
+            "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-01-17-13-57+0800__CAM_BACK_LEFT__1533115172447423.jpg",
+            "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-01-17-13-57+0800__CAM_BACK_RIGHT__1533115172427893.jpg"
+        },
+        "pred": "A. Going ahead.\n\nExplanation: The object at coordinates (0.2432, 0.4972) in the CAM_FRONT image is a truck. Based on its position in the frame and the context of the scene (which appears to be a construction zone with traffic cones and an excavator), the truck is positioned in the center of the road and appears to be moving forward through the intersection or construction area. There are no visual cues to suggest it is turning left or right. Therefore, the most accurate description of its moving status is \"Going ahead.\"",
+        "eff_preprocess_sec": 0.17973424699448515,
+        "eff_generate_sec": 26.072267170005944,
+        "eff_end_to_end_sec": 26.25200141700043,
+        "eff_generated_tokens": 118,
+        "eff_input_tokens": 486
+    }
+]

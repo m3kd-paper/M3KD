@@ -1,0 +1,19 @@
+=== Ablation Study (Sample Size) - Qwen2 Perception MCQ Robustness ===
+
+model       No-MacroMixing-No-MonteCarlo No-MacroMixing-MonteCarlo MacroMixing-No-MonteCarlo MacroMixing-MonteCarlo
+biterror                           0.286                     0.286                     0.214                  0.143
+bright                             0.429                     0.429                     0.357                  0.286
+cameracrash                        0.143                     0.214                     0.143                  0.214
+colorquant                         0.357                     0.357                     0.214                  0.214
+fog                                0.357                     0.357                     0.357                  0.357
+framelost                          0.286                     0.429                     0.214                  0.357
+h256                               0.500                     0.500                     0.500                  0.500
+lens                               0.429                     0.357                     0.357                  0.357
+lowlight                           0.571                     0.571                     0.357                  0.429
+motion                             0.357                     0.357                     0.357                  0.357
+rain                               0.357                     0.357                     0.357                  0.357
+saturate                           0.357                     0.286                     0.286                  0.214
+snow                               0.286                     0.286                     0.286                  0.286
+water                              0.357                     0.357                     0.357                  0.286
+zoom                               0.357                     0.357                     0.357                  0.357
+Average                            0.362                     0.367                     0.314                  0.314

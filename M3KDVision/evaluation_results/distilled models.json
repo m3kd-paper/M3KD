@@ -1,0 +1,110 @@
+======================================================================
+Generating responses
+======================================================================
+Processed prompts: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 1319/1319 [01:28<00:00, 14.87it/s, est. speed input: 1283.82 toks/s, output: 6256.38 toks/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1319/1319 [00:00<00:00, 29566.56it/s]
+
+======================================================================
+RESULT
+======================================================================
+Model:      outputs/qwen2.5-math-1.5b-distillm_v1-50000/merged
+Benchmark:  gsm8k
+Correct:    987/1319
+Accuracy:   0.7483
+Output:     evaluation_results/Qwen2.5-Math-1.5B/gsm8k_seed42.json
+======================================================================
+
+[9/10] Evaluating DistiLLM-v2 model on GSM8K benchmark...
+
+/root/miniconda3/envs/distillm2/lib/python3.10/site-packages/pyairports/airports.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_string
+======================================================================
+Benchmark: gsm8k
+======================================================================
+Number of examples: 1319
+======================================================================
+Loading model
+Model: outputs/qwen2.5-math-1.5b-distillm_v2-50000/merged
+======================================================================
+INFO 09-07 12:25:14 config.py:1450] Downcasting torch.float32 to torch.bfloat16.
+INFO 09-07 12:25:14 llm_engine.py:174] Initializing an LLM engine (v0.5.4) with config: model='outputs/qwen2.5-math-1.5b-distillm_v2-50000/merged', speculative_config=None, tokenizer='outputs/qwen2.5-math-1.5b-distillm_v2-50000/merged', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=outputs/qwen2.5-math-1.5b-distillm_v2-50000/merged, use_v2_block_manager=False, enable_prefix_caching=False)
+INFO 09-07 12:25:14 model_runner.py:720] Starting to load model outputs/qwen2.5-math-1.5b-distillm_v2-50000/merged...
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.46it/s]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:00<00:00,  4.06it/s]
+
+INFO 09-07 12:25:15 model_runner.py:732] Loading model weights took 2.8781 GB
+INFO 09-07 12:25:15 gpu_executor.py:102] # GPU blocks: 89433, # CPU blocks: 9362
+INFO 09-07 12:25:17 model_runner.py:1024] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 09-07 12:25:17 model_runner.py:1028] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 09-07 12:25:23 model_runner.py:1225] Graph capturing finished in 6 secs.
+
+======================================================================
+Generating responses
+======================================================================
+Processed prompts: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 1319/1319 [01:22<00:00, 16.05it/s, est. speed input: 1385.47 toks/s, output: 6265.25 toks/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1319/1319 [00:00<00:00, 29848.75it/s]
+
+======================================================================
+RESULT
+======================================================================
+Model:      outputs/qwen2.5-math-1.5b-distillm_v2-50000/merged
+Benchmark:  gsm8k
+Correct:    999/1319
+Accuracy:   0.7574
+Output:     evaluation_results/Qwen2.5-Math-1.5B/gsm8k_seed42.json
+======================================================================
+
+[9/10] Evaluating gkd model on GSM8K benchmark...
+
+/root/miniconda3/envs/distillm2/lib/python3.10/site-packages/pyairports/airports.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_string
+======================================================================
+Benchmark: gsm8k
+======================================================================
+Number of examples: 1319
+======================================================================
+Loading model
+Model: outputs/qwen2.5-math-1.5b-gkd-50000/merged
+======================================================================
+INFO 09-07 12:26:49 config.py:1450] Downcasting torch.float32 to torch.bfloat16.
+INFO 09-07 12:26:49 llm_engine.py:174] Initializing an LLM engine (v0.5.4) with config: model='outputs/qwen2.5-math-1.5b-gkd-50000/merged', speculative_config=None, tokenizer='outputs/qwen2.5-math-1.5b-gkd-50000/merged', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=outputs/qwen2.5-math-1.5b-gkd-50000/merged, use_v2_block_manager=False, enable_prefix_caching=False)
+INFO 09-07 12:26:50 model_runner.py:720] Starting to load model outputs/qwen2.5-math-1.5b-gkd-50000/merged...
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.63it/s]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:00<00:00,  4.29it/s]
+
+INFO 09-07 12:26:50 model_runner.py:732] Loading model weights took 2.8781 GB
+INFO 09-07 12:26:51 gpu_executor.py:102] # GPU blocks: 89433, # CPU blocks: 9362
+INFO 09-07 12:26:52 model_runner.py:1024] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 09-07 12:26:52 model_runner.py:1028] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 09-07 12:26:58 model_runner.py:1225] Graph capturing finished in 6 secs.
+
+======================================================================
+Generating responses
+======================================================================
+Processed prompts: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 1319/1319 [01:16<00:00, 17.25it/s, est. speed input: 1489.23 toks/s, output: 6343.08 toks/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1319/1319 [00:00<00:00, 30343.33it/s]
+
+======================================================================
+RESULT
+======================================================================
+Model:      outputs/qwen2.5-math-1.5b-gkd-50000/merged
+Benchmark:  gsm8k
+Correct:    1042/1319
+Accuracy:   0.7900
+Output:     evaluation_results/Qwen2.5-Math-1.5B/gsm8k_seed42.json
+======================================================================
+(distillm2) root@username:~/username/distillm-2# 
+
+
+
+======================================================================
+RESULT
+======================================================================
+Model:      outputs/qwen2.5-math-1.5b-distillm_v2_hpd-50000-0.1/merged
+Benchmark:  gsm8k
+Correct:    1091/1319
+Accuracy:   0.8271
+Output:     evaluation_results/outputs_math/qwen2.5-math-1.5b-distillm_v2_hpd-50000-0.1/gsm8k_seed42.json
+======================================================================
